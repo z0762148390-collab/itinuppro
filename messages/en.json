@@ -1,0 +1,534 @@
+{
+  "nav": {
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact",
+    "cta": "Get a free quote"
+  },
+  "hero": {
+    "headline": "Your technical infrastructure, managed end-to-end",
+    "subheadline": "DevOps, web development, hosting — I handle everything so you can focus on growing your business.",
+    "cta_primary": "Get a free quote",
+    "cta_whatsapp": "Chat on WhatsApp"
+  },
+  "problem": {
+    "title": "Does this sound familiar?",
+    "card1": "You're losing hours on technical issues that aren't your core business",
+    "card2": "Your site is slow, unsecured, and nobody's really taking care of it",
+    "card3": "You have an app idea but don't know where to start"
+  },
+  "solution": {
+    "title": "itinup handles all the tech for you",
+    "text": "itinup is a senior freelancer who takes care of your entire technical stack — from website creation to cloud infrastructure — with a single point of contact, clear timelines, and transparent pricing.",
+    "pillar1": "Speed",
+    "pillar2": "Reliability",
+    "pillar3": "Simplicity"
+  },
+  "services": {
+    "title": "What I do for you",
+    "s1_title": "DevOps & Cloud",
+    "s1_desc": "CI/CD, Docker, Kubernetes, AWS. Your infrastructure in production, stable and automated.",
+    "s1_href": "/devops-france",
+    "s2_title": "Custom web development",
+    "s2_desc": "Next.js application + Python API, from idea to deployment.",
+    "s2_href": "/application-web-france",
+    "s3_title": "Professional website",
+    "s3_desc": "Modern design, built-in SEO, delivered in 3 weeks.",
+    "s3_href": "/creation-site-france",
+    "s4_title": "All-in-one package",
+    "s4_desc": "Website + domain + hosting + maintenance. Zero technical management on your end.",
+    "s4_href": "/contact"
+  },
+  "social_proof": {
+    "title": "Why trust itinup?",
+    "step1_title": "Discovery",
+    "step1_desc": "We analyze your needs together — no jargon.",
+    "step2_title": "Proposal",
+    "step2_desc": "Clear quote, precise timelines, no surprises.",
+    "step3_title": "Development",
+    "step3_desc": "I code, deploy, and test.",
+    "step4_title": "Delivery",
+    "step4_desc": "Your product in production, documented and maintained.",
+    "badge_availability": "Available within 48h — guaranteed response",
+    "sectors_title": "Industries served",
+    "sector_industry": "Industry & logistics",
+    "sector_health": "Healthcare & medtech",
+    "sector_finance": "Finance & insurance",
+    "sector_retail": "E-commerce & retail",
+    "sector_startups": "Tech startups",
+    "sector_public": "Public sector"
+  },
+  "keyman": {
+    "title": "The all-in-one package",
+    "subtitle": "Everything you need, in a single offer.",
+    "checklist": [
+      "Domain name included",
+      "Configured and secured hosting",
+      "Automatic deployment",
+      "Professional email",
+      "SSL + optimized performance",
+      "Post-delivery support included"
+    ],
+    "tagline": "One point of contact. One payment. No surprises.",
+    "differentiator": "An agency delivers a website. I deliver a system that works — automatic deployment, hosting included, zero manual intervention."
+  },
+  "cta_final": {
+    "title": "Got a project? Let's talk",
+    "subtitle": "Response within 24h, no commitment.",
+    "reassurance": "No technical jargon, just an honest conversation about your needs.",
+    "cta_primary": "Get a quote",
+    "cta_whatsapp": "WhatsApp"
+  },
+  "footer": {
+    "tagline": "DevOps & custom web development.",
+    "address": "1218 Avenue du Père Soulas, 34000 Montpellier",
+    "legal": "Entrepreneur individuel — SIRET 999 008 329 00016",
+    "activity": "Software programming (APE 62.01Z)",
+    "rights": "© 2025 itinup. All rights reserved.",
+    "links_title": "Links",
+    "legal_link": "Legal notice",
+    "maps_label": "View on Google Maps",
+    "services_title": "Services",
+    "java_label": "Java Spring Boot Freelance",
+    "tibco_label": "TIBCO Integration Freelance",
+    "devops_label": "DevOps & Cloud",
+    "appweb_label": "Custom web application",
+    "site_label": "Website creation"
+  },
+  "pages": {
+    "mentions_legales": {
+      "title": "Legal notice | itinup",
+      "description": "Legal notice for itinup — publisher, hosting, intellectual property and privacy policy."
+    },
+    "devops_france": {
+      "title": "Freelance DevOps in France — CI/CD, Kubernetes, AWS | itinup",
+      "description": "Expert freelance DevOps available anywhere in France. CI/CD, Docker, Terraform, AWS. Production infrastructure delivered in 2 weeks. Free quote.",
+      "h1": "Freelance DevOps in France — Production Infrastructure, CI/CD and AWS Cloud"
+    },
+    "devops_montpellier": {
+      "title": "Freelance DevOps Montpellier — CI/CD, Docker, AWS | itinup",
+      "description": "Freelance DevOps based in Montpellier. CI/CD, Docker, Kubernetes, AWS. On-site in the Occitanie region and remote across France. Free quote.",
+      "h1": "Freelance DevOps in Montpellier — Cloud Infrastructure and CI/CD"
+    },
+    "creation_site": {
+      "title": "Professional website creation in France — Next.js, SEO, hosting included | itinup",
+      "description": "Custom website creation for freelancers, SMEs and startups. Modern design, integrated SEO, hosting and domain included. Delivered in under 3 weeks.",
+      "h1": "Professional website creation — Design, SEO and hosting included"
+    },
+    "creation_site_montpellier": {
+      "title": "Website creation Montpellier — Design, SEO, hosting included | itinup",
+      "description": "Professional website creation in Montpellier. Modern design, local SEO, secured hosting included. Delivered in 3 weeks. Free quote.",
+      "h1": "Website creation in Montpellier — Design, SEO and hosting included"
+    },
+    "app_web": {
+      "title": "Custom web application development — Next.js + Python | itinup",
+      "description": "Custom web application development for startups and SMEs. Modern stack (Next.js, FastAPI, PostgreSQL). From idea to production. Free quote.",
+      "h1": "Custom web application development in France"
+    },
+    "contact": {
+      "title": "Let's discuss your project — Contact | itinup",
+      "description": "Contact itinup for your web or DevOps project. Response within 24h, no commitment. Based in Montpellier, available across France."
+    },
+    "services": {
+      "title": "DevOps & Web Development Services | itinup",
+      "description": "Senior freelancer in Montpellier: DevOps CI/CD, custom web development, website creation and all-inclusive package. Free quote within 24h."
+    },
+    "blog": {
+      "title": "Blog — DevOps, Web & Cloud | itinup",
+      "description": "Practical guides, comparisons and expert advice for SMEs and startups who want to master their technical stack."
+    },
+    "java_spring_boot": {
+      "title": "Java Spring Boot Freelance Developer France | itinup",
+      "description": "Senior Java Spring Boot freelancer available across France. Microservices, REST APIs, Spring Cloud. Remote from Montpellier. Free quote within 24h.",
+      "h1": "A senior Java Spring Boot expert available within 2 weeks, remote"
+    },
+    "tibco": {
+      "title": "TIBCO Freelance Consultant France — BusinessWorks, EMS | itinup",
+      "description": "Freelance TIBCO consultant available across France. BusinessWorks, EMS, BWCE. Remote from Montpellier. Available within 2 weeks. Free quote within 24h.",
+      "h1": "A TIBCO integration expert available within 2 weeks — remote across France"
+    }
+  },
+  "devops_france_content": {
+    "intro": "Need a reliable cloud infrastructure without hiring a full-time DevOps engineer? Based in Montpellier, I work remotely across France to set up your CI/CD pipeline, manage cloud environments, and automate deployments.",
+    "section_why_title": "Why outsource your DevOps to a freelancer?",
+    "section_why_items": [
+      "A senior freelance DevOps costs 2 to 4× less than a full-time employee, with no employer costs",
+      "Immediate expertise on production tools: GitHub Actions, Docker, Kubernetes, Terraform, AWS",
+      "One-off project or monthly retainer — adapt as your needs evolve"
+    ],
+    "section_stack_title": "What I set up for you",
+    "section_stack_items": [
+      "CI/CD: GitHub Actions, GitLab CI — multi-environment pipelines (dev, staging, prod)",
+      "Containerization: Docker, Kubernetes — orchestration and auto-scaling",
+      "AWS Cloud: EC2, RDS, S3, ECS, Route 53, CloudFront — full management",
+      "IaC: Terraform for reproducible, versioned infrastructure",
+      "Monitoring: Prometheus, Grafana, Sentry — alerting and observability"
+    ],
+    "section_process_title": "How I work",
+    "section_process_items": [
+      "Audit of your existing infrastructure (free, 30 min)",
+      "Architecture proposal and detailed quote within 48h",
+      "Iterative implementation with full documentation",
+      "Delivery + team training if needed"
+    ],
+    "faq_title": "Frequently asked questions",
+    "faq": [
+      {
+        "question": "How much does a freelance DevOps mission cost?",
+        "answer": "A senior freelance DevOps rate is between €400 and €700/day depending on complexity. I also offer monthly retainers (maintenance + monitoring) starting from €500/month."
+      },
+      {
+        "question": "Do you work on-site in Montpellier?",
+        "answer": "Yes, I'm based in Montpellier and can work on-site in the Occitanie region. For remote projects, I work across all of France."
+      },
+      {
+        "question": "How quickly can a CI/CD pipeline be set up?",
+        "answer": "A basic CI/CD pipeline (test → build → deploy to staging + production) can be up and running in 3 to 5 business days, depending on your existing stack."
+      }
+    ]
+  },
+  "creation_site_content": {
+    "intro": "A professional website isn't just about design — it needs to load fast, rank on Google, and convert visitors into clients. I build custom sites with Next.js, integrated SEO, and hosting included.",
+    "section_for_title": "Who is this for?",
+    "section_for_items": [
+      "Freelancers and consultants who want a credible professional presence",
+      "SMEs whose current site no longer generates leads",
+      "Tradespeople and retailers who want to be found on Google locally",
+      "Startups that need a landing page or quick MVP"
+    ],
+    "section_includes_title": "What's included",
+    "section_includes_items": [
+      "Custom responsive design (mobile-first)",
+      "Domain name registered in your name",
+      "High-performance, configured and secured hosting",
+      "Free SSL + performance optimization (Core Web Vitals)",
+      "Technical SEO: meta tags, sitemap, schema.org",
+      "Professional email configured",
+      "Automatic deployment — updates without downtime",
+      "30-day post-delivery support included"
+    ],
+    "section_timeline_title": "Timelines",
+    "section_timeline_text": "Showcase site: 2 to 3 weeks. Landing page: 1 week. E-commerce site: 4 to 6 weeks. These timelines include review rounds.",
+    "faq_title": "Frequently asked questions",
+    "faq": [
+      {
+        "question": "How much does a professional website cost?",
+        "answer": "A custom showcase site starts from €1,500. The price depends on the number of pages, features, and level of customization. I provide a detailed quote within 48h."
+      },
+      {
+        "question": "Do you create websites in Montpellier?",
+        "answer": "Yes, I'm based in Montpellier and work both in person and remotely. All projects meet the same quality standards regardless of location."
+      },
+      {
+        "question": "Can I update my site myself after delivery?",
+        "answer": "Yes. Depending on your needs, I integrate a CMS (Sanity, Notion, or a simple solution) that lets you update text and images without touching the code."
+      }
+    ]
+  },
+  "app_web_content": {
+    "intro": "You have a web app idea but don't know where to start? I handle development end-to-end: architecture, backend, frontend, deployment and maintenance. Modern stack, clean code, fast delivery.",
+    "section_types_title": "What type of application?",
+    "section_types_items": [
+      "SaaS: subscription, authentication, dashboard, billing",
+      "Marketplace or B2B platform",
+      "Internal tool (management system, process automation)",
+      "MVP to validate your idea before hiring a team",
+      "REST or GraphQL API for your mobile app"
+    ],
+    "section_stack_title": "Tech stack",
+    "section_stack_items": [
+      "Frontend: Next.js 15 (App Router, SSR/SSG, native SEO)",
+      "Backend: Python 3.12 + FastAPI — fast, typed, auto-documented",
+      "Database: PostgreSQL 16 — reliable, scalable",
+      "Auth: NextAuth.js or Supabase Auth",
+      "Deployment: CI/CD GitHub Actions → AWS or VPS",
+      "Testing: Pytest (backend) + Playwright (e2e)"
+    ],
+    "section_process_title": "From idea to production",
+    "section_process_items": [
+      "Scoping: we define priority features together (MVP first)",
+      "Architecture: documented technical choices, no hidden debt",
+      "Iterative development: regular deliveries, fast feedback",
+      "Production launch: CI/CD, monitoring, technical documentation"
+    ],
+    "faq_title": "Frequently asked questions",
+    "faq": [
+      {
+        "question": "How long does it take to build a web application?",
+        "answer": "An MVP (core features) is typically delivered in 6 to 10 weeks. A more complex application takes 3 to 6 months. I deliver in iterations so you have something working quickly."
+      },
+      {
+        "question": "Can I take over the codebase after delivery?",
+        "answer": "Absolutely. The code is clean, documented, and hosted in your own Git repository. I can train your technical team or handle maintenance if you prefer."
+      },
+      {
+        "question": "Do you use cutting-edge or battle-tested technologies?",
+        "answer": "Both. Next.js, FastAPI and PostgreSQL are mature technologies with large communities. I don't use experimental libraries in production."
+      }
+    ]
+  },
+  "clients": {
+    "title": "They trusted me"
+  },
+  "trusted_by": {
+    "title": "They trusted me",
+    "seo_text": "Zouhir has worked with clients including AMUE, Inetum, Capgemini, Airbus and AIFE in France."
+  },
+  "availability": {
+    "status": "Available now",
+    "delay": "Starting within 2 weeks",
+    "remote": "Remote across France · On-site travel available"
+  },
+  "stats": {
+    "title": "itinup by the numbers",
+    "s1_label": "Years of DevOps & Dev experience",
+    "s2_label": "Projects delivered to production",
+    "s3_label": "Guaranteed response time",
+    "s4_label": "Domains: DevOps · Java · Web"
+  },
+  "tech_stack": {
+    "title": "My tech stack",
+    "group_devops": "DevOps & Cloud",
+    "group_dev": "Web Development",
+    "group_expert": "Java & Integration Expertise"
+  },
+  "profile_section": {
+    "title": "Who am I?",
+    "name": "Zouhir Echarif El Idrissi El Kandri",
+    "role": "Senior Freelance DevOps & Web Developer",
+    "bio": "Based in Montpellier (Hérault, Occitanie), I've been helping startups, SMEs and large enterprises across France — Paris, Lyon, Toulouse, Bordeaux, Marseille, Nantes — for over 5 years, working fully remote. Java Spring Boot, DevOps CI/CD, website creation: I deliver end-to-end with a single point of contact and transparent pricing.",
+    "location": "Montpellier, France",
+    "availability": "Available within 2 weeks",
+    "adaptability": "I adapt to my clients' existing tech stack — Java, Python, Node.js or any technology already in place — to meet the need without imposing a rewrite.",
+    "cta": "Let's discuss your freelance mission"
+  },
+  "comparison": {
+    "title": "itinup Freelance or Agency?",
+    "subtitle": "Why SMEs choose a senior freelancer over a consultancy.",
+    "col_freelance": "itinup Freelance",
+    "col_agency": "Consultancy / Agency",
+    "row1_label": "Time to start",
+    "row1_freelance": "1 to 2 weeks",
+    "row1_agency": "4 to 8 weeks",
+    "row2_label": "Your point of contact",
+    "row2_freelance": "The expert who codes",
+    "row2_agency": "Salesperson + junior",
+    "row3_label": "Pricing",
+    "row3_freelance": "Direct day rate, transparent",
+    "row3_agency": "+30 to 50% margin",
+    "row4_label": "Flexibility",
+    "row4_freelance": "Short or long-term",
+    "row4_agency": "Minimum commitment",
+    "row5_label": "Code ownership",
+    "row5_freelance": "100% yours",
+    "row5_agency": "Variable",
+    "cta": "Start with itinup"
+  },
+  "blog_preview": {
+    "title": "Useful content, no jargon",
+    "subtitle": "Practical guides and expert advice to master your tech stack.",
+    "cta": "View all articles",
+    "read_min": "min read"
+  },
+  "faq_landing": {
+    "title": "Frequently asked questions",
+    "q1": "What services does itinup offer?",
+    "a1": "itinup provides DevOps services (CI/CD, Docker, Kubernetes, AWS), professional website creation, and custom web application development — all with a single point of contact and transparent pricing.",
+    "q2": "How long does it take to deliver a website?",
+    "a2": "A showcase site is delivered in 2 to 3 weeks. A landing page in 1 week. A complete web application in 6 to 10 weeks.",
+    "q3": "Do you work across France?",
+    "a3": "Yes. Based in Montpellier, I work fully remote for clients anywhere in France and internationally.",
+    "q4": "How does the first contact work?",
+    "a4": "Send a message via the contact form or WhatsApp. I respond within 24h for a free, no-commitment 30-minute call.",
+    "q5": "Can I hire you for a short or long-term engagement?",
+    "a5": "Both. I take on short missions (audit, targeted sprint) as well as long-term engagements (monthly retainer, ongoing maintenance)."
+  },
+  "contact_content": {
+    "h1": "Let's discuss your project",
+    "subtitle": "Describe your need and I'll get back to you within 24h. No technical jargon, just an honest conversation.",
+    "form_name": "Your name",
+    "form_name_placeholder": "John Smith",
+    "form_email": "Your email",
+    "form_email_placeholder": "john@example.com",
+    "form_message": "Your project",
+    "form_message_placeholder": "Describe your project, your need, or your question...",
+    "form_submit": "Send message",
+    "rgpd_notice": "Your data is used solely to respond to your request. No spam, no resale. In accordance with GDPR, you may request deletion at any time at contact@itinup.com",
+    "or_separator": "or",
+    "whatsapp_label": "Instant reply on WhatsApp",
+    "address_title": "Address",
+    "email_title": "Email",
+    "whatsapp_title": "WhatsApp"
+  },
+  "services_page": {
+    "h1": "All the technical work, managed by one expert",
+    "subtitle": "One senior freelancer for all your technical needs — from cloud infrastructure to getting your site live.",
+    "s1_badge": "Main service",
+    "s1_title": "DevOps & Cloud",
+    "s1_benefit": "Your app deployed in one click, with zero downtime",
+    "s1_desc": "Setting up CI/CD pipelines with GitHub Actions, Docker and AWS. Your infrastructure in production — stable, automated and monitored.",
+    "s1_stack": ["CI/CD", "Docker", "Kubernetes", "AWS", "Terraform", "Ansible"],
+    "s1_cta": "Request a DevOps quote",
+    "s2_title": "Custom web development",
+    "s2_benefit": "From idea to your first users in 4 to 6 weeks",
+    "s2_desc": "Complete web application, from database to interface. Modern stack, clean code, deployed and documented.",
+    "s2_stack": ["Next.js", "FastAPI", "PostgreSQL", "TypeScript"],
+    "s2_cta": "Discuss my project",
+    "s3_title": "Professional website",
+    "s3_benefit": "A site that generates leads from the very first weeks",
+    "s3_desc": "Modern, conversion-focused design, SEO integrated from the start, delivered in 3 weeks with hosting configured.",
+    "s3_stack": ["Next.js", "Tailwind", "SEO", "SSR"],
+    "s3_cta": "See pricing",
+    "s4_title": "Java Spring Boot Freelance",
+    "s4_benefit": "A senior Java expert available within 2 weeks",
+    "s4_desc": "Spring Boot microservices, REST APIs, cloud migration. Code delivered, documented, yours to own.",
+    "s4_stack": ["Java 17+", "Spring Boot 3", "Spring Cloud", "PostgreSQL", "Docker"],
+    "s4_cta": "Learn more",
+    "s5_title": "TIBCO Integration Freelance",
+    "s5_benefit": "Your TIBCO flows operational without ESN delays",
+    "s5_desc": "BusinessWorks 5.x/6.x, EMS, BWCE on Kubernetes. Migration, maintenance and new flow development.",
+    "s5_stack": ["TIBCO BW", "EMS", "BWCE", "Kubernetes", "JMS"],
+    "s5_cta": "Learn more",
+    "keyman_title": "All-inclusive package",
+    "keyman_benefit": "Zero technical management. Forever.",
+    "keyman_desc": "An agency delivers a site. I deliver a system that works — automatic deployment, hosting included, zero manual intervention on your side.",
+    "keyman_checklist": [
+      "Domain name included",
+      "Hosting configured and secured",
+      "Automatic deployment (CI/CD)",
+      "Professional email",
+      "SSL + optimised performance",
+      "Post-delivery support included"
+    ],
+    "keyman_tagline": "One contact. One payment. Zero surprises.",
+    "keyman_cta": "I want this package",
+    "keyman_teaser": "Domain · Hosting · CI/CD · Support",
+    "reassurance_1": "Quote within 24h",
+    "reassurance_2": "No commitment",
+    "reassurance_3": "Based in Montpellier — Remote possible",
+    "reassurance_4": "Code delivered, documented, you own it",
+    "cta_title": "Got a project in mind?",
+    "cta_subtitle": "No technical jargon — just an honest conversation about your need.",
+    "cta_primary": "Request a free quote",
+    "cta_whatsapp": "Chat on WhatsApp",
+    "cta_micro": "Response within 24h, no commitment."
+  },
+  "blog_page_content": {
+    "h1": "Blog — DevOps, Web & Cloud",
+    "subtitle": "Practical guides, comparisons and expert advice for SMEs and startups who want to master their tech stack."
+  },
+  "java_spring_boot_content": {
+    "intro": "Need a senior Java Spring Boot developer without ESN delays? Based in Montpellier, I work remotely across France to build your microservices, REST APIs and Spring Boot applications — from MVP to production.",
+    "section_why_title": "Why is it hard to find a senior Java Spring Boot freelancer quickly?",
+    "section_why_items": [
+      "Senior Java Spring Boot profiles are scarce — ESNs lock them in long-term contracts",
+      "Freelance platforms are full of profiles claiming Java seniority without real production experience",
+      "Going direct gives you access to the actual expert, not a salesperson reselling a junior"
+    ],
+    "section_stack_title": "What I deliver concretely",
+    "section_stack_items": [
+      "Spring Boot 3.x — microservices, REST/GraphQL APIs, unit and integration tests",
+      "Spring Cloud — Config Server, Eureka, Gateway, Circuit Breaker (Resilience4j)",
+      "Databases: PostgreSQL, MySQL, MongoDB — optimised JPA/Hibernate repositories",
+      "Security: Spring Security, OAuth2, JWT — robust authentication and authorisation",
+      "CI/CD: Maven/Gradle + GitHub Actions — automated test/build/deploy pipelines",
+      "Observability: Micrometer, Actuator, Prometheus, Grafana — production monitoring"
+    ],
+    "section_process_title": "How I work",
+    "section_process_items": [
+      "Free scoping call (30 min) — I understand your architecture and constraints",
+      "Technical proposal and quote within 48h — clear scope, realistic timelines",
+      "Iterative development with regular deliveries — you see progress in real time",
+      "Delivery: clean code, tests, documentation, operational CI/CD pipeline"
+    ],
+    "section_usecases_title": "Typical use cases",
+    "section_usecases_items": [
+      {"title": "Startup / scale-up", "desc": "Your MVP is showing its limits. I migrate to Spring Boot with a scalable microservices architecture, without rewriting everything at once."},
+      {"title": "SME / mid-size company", "desc": "Your Java monolith is ageing. I progressively split it into Spring Boot microservices, API by API, without service interruption."},
+      {"title": "Enterprise IT", "desc": "Your in-house team is overloaded. I step in to deliver a specific module — SSO, integration API, refactoring."},
+      {"title": "Agencies & consultancies", "desc": "You need a senior Java expert urgently. I integrate with your team and deliver on time."}
+    ],
+    "midcta_heading": "Got a Java Spring Boot project?",
+    "midcta_sub": "First conversation free. I respond within 24h, no commitment.",
+    "midcta_btn": "Let's discuss your need",
+    "geo_title": "Who I am",
+    "geo_text": "I'm Zouhir, a Java Spring Boot freelance developer based in Montpellier (Herault, Occitanie). I work remotely across France — Paris, Lyon, Toulouse, Bordeaux, Marseille, Nantes, Nimes, Beziers — and on-site in the Occitanie region when needed. My clients are startups, SMEs, mid-size companies and large enterprises that need senior Java expertise quickly, without ESN delays and costs.",
+    "faq_title": "Frequently asked questions",
+    "faq": [
+      {"question": "What is the rate for a Java Spring Boot freelancer in France?", "answer": "A senior Java Spring Boot freelancer charges between 450 and 700 EUR/day in France. The rate varies based on architecture complexity and mission duration. For missions of 3 months or more, a 10-15% discount is negotiable. I provide a detailed quote within 24h."},
+      {"question": "How quickly can a Java Spring Boot mission start?", "answer": "I'm typically available within 1 to 2 weeks. After an initial scoping call, I provide a technical proposal within 48h. A mission can start within 5 business days if the scope is clear."},
+      {"question": "Java Spring Boot freelancer vs consultancy: what's the real difference?", "answer": "With a consultancy, you pay a 30-50% margin on top of the consultant's actual rate. With a freelancer, you interact directly with the expert delivering the work. No account manager, no middleman, no surprise on who actually works on your project."},
+      {"question": "Do you work remotely or only in Montpellier?", "answer": "I work primarily remotely from Montpellier for clients across France — Paris, Lyon, Toulouse, Bordeaux, Nantes, Marseille. On-site engagements are possible in the Occitanie region."},
+      {"question": "What deliverables are provided at the end of a Java Spring Boot mission?", "answer": "At the end of every mission: versioned code in your Git repository, unit and integration tests, OpenAPI/Swagger technical documentation, working CI/CD pipeline, and deployment guide. You own all the code."},
+      {"question": "Have you worked on monolith-to-microservices migrations?", "answer": "Yes. I have led several migrations from Java monoliths to Spring Boot microservices architectures. The key is a progressive approach — Strangler Fig Pattern — to avoid interrupting the existing service."},
+      {"question": "Can you work on an existing Spring Boot application?", "answer": "Yes. I can take over an existing application to audit it, fix performance issues, add features, or improve test coverage. No need to start from scratch."},
+      {"question": "Do you work with Agile / Scrum teams?", "answer": "Yes. I adapt to your existing Agile rituals — sprint planning, daily standups, code reviews, retrospectives. I can also suggest a lightweight process if you do not have one yet."}
+    ],
+    "internal_links_label": "Also read",
+    "link_devops": "DevOps & CI/CD — cloud infrastructure for your Java apps",
+    "link_services": "All services",
+    "link_blog": "Freelancer vs consultancy: an honest comparison",
+    "cta_heading": "Got a Java Spring Boot project?",
+    "cta_sub": "Free quote within 24h, no commitment.",
+    "cta_primary": "Request a free quote",
+    "cta_whatsapp": "Chat on WhatsApp",
+    "cta_micro": "Response within 24h · No commitment"
+  },
+  "tibco_content": {
+    "intro": "Need a freelance TIBCO consultant for an integration, migration or maintenance project? Based in Montpellier, I work remotely across France for TIBCO BusinessWorks, EMS and BWCE missions — SMEs, mid-size companies and large enterprises.",
+    "section_why_title": "Why is it so hard to find a senior TIBCO consultant quickly?",
+    "section_why_items": [
+      "TIBCO skills are rare — few senior profiles are available outside major consultancies",
+      "IT departments often wait 4 to 8 weeks to source a TIBCO consultant via a consultancy, with a 30-50% margin",
+      "Going direct with a freelance TIBCO consultant means starting within 2 weeks at the expert's real rate"
+    ],
+    "section_stack_title": "What I know and deliver",
+    "section_stack_items": [
+      "TIBCO BusinessWorks 5.x / 6.x — process development, optimisation and migration",
+      "TIBCO EMS — queue and topic configuration, bridges, performance and security",
+      "TIBCO BW Container Edition (BWCE) — cloud deployment on Kubernetes",
+      "TIBCO Spotfire — dashboards, analytics, data source connections",
+      "Middleware integration — JMS, REST, SOAP, FTP, database connectors",
+      "Technical documentation and knowledge transfer included"
+    ],
+    "section_process_title": "How I work",
+    "section_process_items": [
+      "Analysis of your existing TIBCO context (free, 30 min)",
+      "Technical proposal with clear scope and realistic timelines within 48h",
+      "Iterative development or migration — validatable deliveries at each stage",
+      "Delivery: tested processes, documentation, configured deployment pipelines"
+    ],
+    "section_usecases_title": "Typical use cases",
+    "section_usecases_items": [
+      {"title": "BW 5.x to BWCE migration", "desc": "Your IT department wants to move to a cloud-native architecture. I analyse your existing BW processes and progressively migrate to BWCE on Kubernetes."},
+      {"title": "Maintenance and evolution", "desc": "Your team lacks TIBCO resources. I step in to maintain existing flows and develop new integrations."},
+      {"title": "Complex system integration", "desc": "You have an integration project between an ERP (SAP, Oracle) and business applications. I design TIBCO flows with error handling and recovery mechanisms."},
+      {"title": "IT in transition", "desc": "You are evaluating a migration to another platform (MuleSoft, Apache Camel). I audit your TIBCO flows and document the target architecture."}
+    ],
+    "midcta_heading": "Got a TIBCO project?",
+    "midcta_sub": "First conversation free. I respond within 24h, no commitment.",
+    "midcta_btn": "Let's discuss your need",
+    "geo_title": "Who I am",
+    "geo_text": "I'm Zouhir, a freelance TIBCO consultant based in Montpellier (Herault, Occitanie). I work remotely across France — Paris, Lyon, Toulouse, Bordeaux, Marseille, Nantes, Nimes, Beziers — and on-site in the Occitanie region when needed. My clients are SMEs, mid-size companies and large enterprises that need TIBCO expertise available quickly, without ESN delays and costs.",
+    "faq_title": "Frequently asked questions",
+    "faq": [
+      {"question": "What is the rate for a freelance TIBCO consultant in France?", "answer": "An experienced freelance TIBCO consultant charges between 500 and 800 EUR/day in France. The rarity of these profiles and project complexity justify this positioning. A discount is possible for longer missions (3 months+). Transparent quote within 24h."},
+      {"question": "How quickly can a TIBCO mission start?", "answer": "I am available within 1 to 2 weeks. After an initial 30-minute call, I provide a mission proposal within 48h. For urgent situations, starting within 5 business days is possible."},
+      {"question": "Freelance TIBCO consultant vs consultancy: what is the real difference?", "answer": "A consultancy charges a 30-50% margin on the consultant's actual rate. With a freelancer, you sign directly with the expert delivering the mission — no salesperson, no middleman, transparent day rate."},
+      {"question": "Do you work remotely or only in Montpellier?", "answer": "I work primarily remotely from Montpellier for clients across France. On-site engagements are possible in Occitanie (Montpellier, Toulouse, Nimes) and occasionally in Paris or Lyon."},
+      {"question": "What deliverables are provided at the end of a TIBCO mission?", "answer": "At the end of a mission: documented TIBCO processes, integration architecture diagrams, deployment guide, monitoring and incident recovery procedures. Everything is delivered in your existing code repository or documentation space."},
+      {"question": "Have you worked on TIBCO BW 5.x to BWCE migrations?", "answer": "Yes. Migrating from TIBCO BusinessWorks 5.x to BWCE is one of the most frequent requests. It involves analysing existing flows, partial refactoring for Kubernetes, and a blue/green deployment strategy to minimise downtime."},
+      {"question": "Can TIBCO BW 5.x and BWCE coexist during a migration?", "answer": "Yes, that is the recommended strategy. Both versions coexist during the transition — new processes in BWCE, existing ones remain in BW 5.x until fully migrated. I size the coexistence strategy according to your context."},
+      {"question": "Do you work on TIBCO Spotfire projects?", "answer": "Yes. I work on designing Spotfire dashboards, connecting to data sources (SQL, REST, files), and optimising analytical performance."}
+    ],
+    "internal_links_label": "Also read",
+    "link_devops": "DevOps & CI/CD — to deploy your TIBCO integrations",
+    "link_services": "All services",
+    "link_blog": "Freelancer vs consultancy: an honest comparison",
+    "cta_heading": "Got a TIBCO project?",
+    "cta_sub": "Free quote within 24h, no commitment.",
+    "cta_primary": "Request a free quote",
+    "cta_whatsapp": "Chat on WhatsApp",
+    "cta_micro": "Response within 24h · No commitment"
+  }
+}

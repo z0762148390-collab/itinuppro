@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Tokens ──────────────────────────────────────────────────────────────── */
+@layer base {
+  :root {
+    --font-geist:  'Geist', system-ui, sans-serif;
+    --font-arabic: 'Noto Sans Arabic', system-ui, sans-serif;
+    --header-h: 64px;
+
+    /* App palette */
+    --bg-app:      #020617;   /* slate-950 */
+    --bg-surface:  #0f172a;   /* slate-900 */
+    --bg-elevated: #1e293b;   /* slate-800 */
+    --border:      rgba(255,255,255,0.07);
+    --text-1:      #f8fafc;   /* slate-50  */
+    --text-2:      #94a3b8;   /* slate-400 */
+    --text-3:      #64748b;   /* slate-500 */
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    font-family: var(--font-geist);
+    background-color: var(--bg-app);
+    color: var(--text-2);
+  }
+
+  [dir='rtl'],
+  [dir='rtl'] body {
+    font-family: var(--font-arabic);
+  }
+}
+
+/* ─── Logo — < itinup > chevrons ─────────────────────────────────────────── */
+/*
+ * L'espace entre les chevrons et "itinup" est animé via `gap` sur le
+ * flex container. Les chevrons ne bougent pas eux-mêmes — c'est le
+ * vide qui s'ouvre, comme une balise qui "respire".
+ *
+ * Désynchronisation : le `>` part avec 0.2 s de décalage pour éviter
+ * l'effet loader symétrique.
+ *
+ * Couleurs : bleu atténué au repos → bleu vif au pic. Pas de violet.
+ */
+
+.logo-word {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 1px;
+  animation: logoOpen 4.5s ease-in-out infinite;
+}
+
+@keyframes logoOpen {
+  0%, 100% { gap: 1px; }
+  50%      { gap: 7px; }
+}
+
+/* Chevrons < et > */
+.logo-chevron {
+  font-size: 1.18rem;
+  font-weight: 700;
+  line-height: 1;
+  display: inline-block;
+}
+
+.logo-chevron-lt { animation: chevronDim 4.5s ease-in-out infinite; }
+.logo-chevron-gt { animation: chevronDim 4.5s ease-in-out 0.2s infinite; }
+
+@keyframes chevronDim {
+  0%, 100% { color: rgba(59, 130, 246, 0.35); }
+  50%      { color: #60a5fa; }
+}
+
+/* Texte "itinup" */
+.logo-text {
+  background: linear-gradient(135deg, #f8fafc 0%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 1.12rem;
+  letter-spacing: -0.03em;
+}
+
+/* ─── Navigation ─────────────────────────────────────────────────────────── */
+
+/* ─── Buttons ────────────────────────────────────────────────────────────── */
+.btn-gradient {
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  transition: filter 0.2s ease, transform 0.12s ease, box-shadow 0.25s ease;
+}
+.btn-gradient:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 4px 28px -4px rgba(37,99,235,0.55);
+}
+.btn-gradient:active { transform: scale(0.97); }
+
+/* ─── Header glass ───────────────────────────────────────────────────────── */
+.header-glass {
+  background: rgba(2,6,23,0.88);
+  backdrop-filter: blur(14px) saturate(180%);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+/* ─── Card ───────────────────────────────────────────────────────────────── */
+.card {
+  background: rgba(15,23,42,0.7);   /* surface + slight alpha */
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  border-color: rgba(37,99,235,0.35);
+  box-shadow: 0 0 0 1px rgba(37,99,235,0.15), 0 8px 32px -8px rgba(37,99,235,0.2);
+}
+
+/* ─── Dot grid background ────────────────────────────────────────────────── */
+.dot-grid {
+  background-image: radial-gradient(rgba(37,99,235,0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* ─── Gradient headline ──────────────────────────────────────────────────── */
+.headline-gradient {
+  background: linear-gradient(135deg, #f8fafc 30%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ─── Glow badge ─────────────────────────────────────────────────────────── */
+.badge-glow {
+  box-shadow: 0 0 12px rgba(37,99,235,0.25), inset 0 0 8px rgba(37,99,235,0.08);
+}
+
+/* ─── Clients marquee ────────────────────────────────────────────────────── */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 22s linear infinite;
+  will-change: transform;
+}
+.clients-strip:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+/* ─── Accessibility ──────────────────────────────────────────────────────── */
+@layer utilities {
+  .skip-link {
+    @apply sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50
+    focus:px-4 focus:py-2 focus:bg-slate-900 focus:text-brand-400
+    focus:rounded-lg focus:shadow-lg focus:border focus:border-brand-600/40;
+  }
+}

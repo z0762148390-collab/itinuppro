@@ -1,0 +1,33 @@
+export const SITE = {
+  name: 'itinup',
+  url: 'https://itinup.com',
+  whatsapp: 'https://wa.me/33764278451',
+  whatsappNumber: '+33 7 64 27 84 51',
+  email: 'contact@itinup.com',
+  address: '1218 Avenue du Père Soulas, 34000 Montpellier',
+  city: 'Montpellier',
+  country: 'FR',
+  siret: '999 008 329 00016',
+  googleMaps: 'https://maps.google.com/?q=1218+Avenue+du+Pere+Soulas+34000+Montpellier',
+  locales: ['fr', 'en', 'ar'] as const,
+  defaultLocale: 'fr' as const,
+} as const;
+
+export const PERSON = {
+  name: 'Zouhir Echarif El Idrissi El Kandri',
+  legalName: 'ECHARIF EL IDRISSI EL KANDRI ZOUHIR',
+  jobTitle: 'Freelance DevOps & Développeur Web',
+  knowsAbout: [
+    'DevOps',
+    'Kubernetes',
+    'AWS',
+    'Docker',
+    'Ansible',
+    'Terraform',
+    'Next.js',
+    'CI/CD',
+    'FastAPI',
+    'PostgreSQL',
+    'GitHub Actions',
+  ],
+} as const;

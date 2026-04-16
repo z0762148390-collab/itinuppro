@@ -1,0 +1,534 @@
+{
+  "nav": {
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact",
+    "cta": "Devis gratuit"
+  },
+  "hero": {
+    "headline": "Votre infrastructure technique, gérée de A à Z",
+    "subheadline": "DevOps, développement web, hébergement — je m'occupe de tout pendant que vous développez votre activité.",
+    "cta_primary": "Demander un devis gratuit",
+    "cta_whatsapp": "Discuter sur WhatsApp"
+  },
+  "problem": {
+    "title": "Vous reconnaissez-vous ?",
+    "card1": "Vous perdez des heures sur des bugs techniques qui ne sont pas votre métier",
+    "card2": "Votre site est lent, non sécurisé, et personne ne s'en occupe vraiment",
+    "card3": "Vous avez une idée d'app mais vous ne savez pas par où commencer"
+  },
+  "solution": {
+    "title": "itinup gère tout le technique à votre place",
+    "text": "itinup, c'est un freelance senior qui prend en charge toute la partie technique — de la création du site à l'infrastructure cloud — avec un seul interlocuteur, des délais clairs, et un tarif transparent.",
+    "pillar1": "Rapidité",
+    "pillar2": "Fiabilité",
+    "pillar3": "Simplicité"
+  },
+  "services": {
+    "title": "Ce que je fais pour vous",
+    "s1_title": "DevOps & Cloud",
+    "s1_desc": "CI/CD, Docker, Kubernetes, AWS. Votre infra en production, stable et automatisée.",
+    "s1_href": "/devops-france",
+    "s2_title": "Développement web sur mesure",
+    "s2_desc": "Application Next.js + API Python, de l'idée au déploiement.",
+    "s2_href": "/application-web-france",
+    "s3_title": "Site web professionnel",
+    "s3_desc": "Design moderne, SEO intégré, livré en 3 semaines.",
+    "s3_href": "/creation-site-france",
+    "s4_title": "Offre clé en main",
+    "s4_desc": "Site + domaine + hébergement + maintenance. Zéro gestion technique de votre côté.",
+    "s4_href": "/contact"
+  },
+  "social_proof": {
+    "title": "Pourquoi faire confiance à itinup ?",
+    "step1_title": "Discovery",
+    "step1_desc": "On analyse votre besoin ensemble, sans jargon.",
+    "step2_title": "Proposition",
+    "step2_desc": "Devis clair, délais précis, zéro surprise.",
+    "step3_title": "Développement",
+    "step3_desc": "Je code, je déploie, je teste.",
+    "step4_title": "Livraison",
+    "step4_desc": "Votre produit en production, documenté et maintenu.",
+    "badge_availability": "Disponible sous 48h — réponse garantie",
+    "sectors_title": "Secteurs accompagnés",
+    "sector_industry": "Industrie & logistique",
+    "sector_health": "Santé & medtech",
+    "sector_finance": "Finance & assurance",
+    "sector_retail": "E-commerce & retail",
+    "sector_startups": "Startups tech",
+    "sector_public": "Secteur public"
+  },
+  "keyman": {
+    "title": "L'offre clé en main",
+    "subtitle": "Tout ce dont vous avez besoin, dans une seule offre.",
+    "checklist": [
+      "Nom de domaine inclus",
+      "Hébergement configuré et sécurisé",
+      "Déploiement automatique",
+      "Email professionnel",
+      "SSL + performances optimisées",
+      "Support post-livraison inclus"
+    ],
+    "tagline": "Un seul interlocuteur. Un seul paiement. Zéro surprise.",
+    "differentiator": "Une agence vous livre un site. Moi je vous livre un système qui fonctionne — déploiement automatique, hébergement inclus, zéro intervention manuelle."
+  },
+  "cta_final": {
+    "title": "Vous avez un projet ? Parlons-en",
+    "subtitle": "Réponse sous 24h, sans engagement.",
+    "reassurance": "Pas de jargon technique, juste une conversation honnête sur votre besoin.",
+    "cta_primary": "Demander un devis",
+    "cta_whatsapp": "WhatsApp"
+  },
+  "footer": {
+    "tagline": "DevOps & développement web sur mesure.",
+    "address": "1218 Avenue du Père Soulas, 34000 Montpellier",
+    "legal": "Entrepreneur individuel — SIRET 999 008 329 00016",
+    "activity": "Programmation informatique (APE 62.01Z)",
+    "rights": "© 2025 itinup. Tous droits réservés.",
+    "links_title": "Liens",
+    "legal_link": "Mentions légales",
+    "maps_label": "Voir sur Google Maps",
+    "services_title": "Services",
+    "java_label": "Java Spring Boot Freelance",
+    "tibco_label": "Intégration TIBCO Freelance",
+    "devops_label": "DevOps & Cloud",
+    "appweb_label": "Application web sur mesure",
+    "site_label": "Création de site web"
+  },
+  "pages": {
+    "mentions_legales": {
+      "title": "Mentions légales | itinup",
+      "description": "Mentions légales du site itinup — éditeur, hébergeur, propriété intellectuelle et politique de confidentialité."
+    },
+    "devops_france": {
+      "title": "Freelance DevOps en France — CI/CD, Kubernetes, AWS | itinup",
+      "description": "Expert DevOps freelance disponible partout en France. CI/CD, Docker, Terraform, AWS. Infra production livrée en 2 semaines. Devis gratuit.",
+      "h1": "Freelance DevOps en France — Infrastructure production, CI/CD et Cloud AWS"
+    },
+    "devops_montpellier": {
+      "title": "Freelance DevOps Montpellier — CI/CD, Docker, AWS | itinup",
+      "description": "Freelance DevOps basé à Montpellier. CI/CD, Docker, Kubernetes, AWS. Intervention sur site en Occitanie et remote sur toute la France. Devis gratuit.",
+      "h1": "Freelance DevOps à Montpellier — Infrastructure cloud et CI/CD"
+    },
+    "creation_site": {
+      "title": "Création de site web professionnel en France — Next.js, SEO, hébergement inclus | itinup",
+      "description": "Création de site web sur mesure pour indépendants, PME et startups. Design moderne, SEO intégré, hébergement et domaine inclus. Livré en moins de 3 semaines.",
+      "h1": "Création de site web professionnel — Design, SEO et hébergement inclus"
+    },
+    "creation_site_montpellier": {
+      "title": "Création site web Montpellier — Design, SEO, hébergement inclus | itinup",
+      "description": "Création de site web professionnel à Montpellier. Design moderne, SEO local, hébergement sécurisé inclus. Livré en 3 semaines. Devis gratuit.",
+      "h1": "Création de site web à Montpellier — Design, SEO et hébergement inclus"
+    },
+    "app_web": {
+      "title": "Développement application web sur mesure — Next.js + Python | itinup",
+      "description": "Développement d'applications web sur mesure pour startups et PME. Stack moderne (Next.js, FastAPI, PostgreSQL). De l'idée à la mise en production. Devis gratuit.",
+      "h1": "Développement d'application web sur mesure en France"
+    },
+    "contact": {
+      "title": "Discutons de votre projet — Contact | itinup",
+      "description": "Contactez itinup pour votre projet web ou DevOps. Réponse sous 24h, sans engagement. Basé à Montpellier, j'interviens sur toute la France."
+    },
+    "services": {
+      "title": "Services DevOps & Développement Web Freelance | itinup",
+      "description": "Freelance senior à Montpellier : DevOps CI/CD, développement web sur mesure, création de site et offre clé en main. Devis gratuit sous 24h."
+    },
+    "blog": {
+      "title": "Blog — DevOps, Web & Cloud | itinup",
+      "description": "Articles pratiques sur le DevOps, la création de site web, le cloud et le développement. Guides, comparatifs et conseils d'expert."
+    },
+    "java_spring_boot": {
+      "title": "Développeur Java Spring Boot Freelance France | itinup",
+      "description": "Freelance Java Spring Boot senior disponible en France. Microservices, API REST, Spring Cloud. Remote depuis Montpellier. Devis gratuit sous 24h.",
+      "h1": "Un expert Java Spring Boot disponible sous 2 semaines, en remote"
+    },
+    "tibco": {
+      "title": "Consultant TIBCO Freelance France — BusinessWorks, EMS | itinup",
+      "description": "Consultant TIBCO freelance disponible en France. BusinessWorks, EMS, BWCE. Remote depuis Montpellier. Disponible sous 2 semaines. Devis gratuit 24h.",
+      "h1": "Un consultant TIBCO disponible sous 2 semaines — remote France entière"
+    }
+  },
+  "devops_france_content": {
+    "intro": "Besoin d'une infrastructure cloud fiable sans recruter un ingénieur DevOps à temps plein ? Basé à Montpellier, j'interviens en remote sur toute la France pour mettre en place votre pipeline CI/CD, gérer vos environnements cloud et automatiser vos déploiements.",
+    "section_why_title": "Pourquoi externaliser votre DevOps à un freelance ?",
+    "section_why_items": [
+      "Un freelance DevOps senior coûte 2 à 4× moins qu'un ingénieur en CDI, sans les charges sociales",
+      "Expertise immédiate sur les outils de production : GitHub Actions, Docker, Kubernetes, Terraform, AWS",
+      "Mission ponctuelle ou contrat mensuel : vous adaptez selon l'évolution de vos besoins"
+    ],
+    "section_stack_title": "Ce que j'installe pour vous",
+    "section_stack_items": [
+      "CI/CD : GitHub Actions, GitLab CI — pipelines multi-environnements (dev, staging, prod)",
+      "Conteneurisation : Docker, Kubernetes — orchestration et scalabilité automatique",
+      "Cloud AWS : EC2, RDS, S3, ECS, Route 53, CloudFront — gestion complète",
+      "IaC : Terraform pour une infrastructure reproductible et versionnée",
+      "Monitoring : Prometheus, Grafana, Sentry — alerting et observabilité"
+    ],
+    "section_process_title": "Comment je travaille",
+    "section_process_items": [
+      "Audit de votre infrastructure existante (gratuit, 30 min)",
+      "Proposition d'architecture et devis détaillé sous 48h",
+      "Mise en place itérative avec documentation complète",
+      "Livraison + formation de votre équipe si besoin"
+    ],
+    "faq_title": "Questions fréquentes",
+    "faq": [
+      {
+        "question": "Combien coûte une mission DevOps freelance ?",
+        "answer": "Le tarif d'un freelance DevOps senior se situe entre 400 et 700€/jour selon la complexité. Je propose aussi des forfaits mensuels (maintenance + monitoring) à partir de 500€/mois."
+      },
+      {
+        "question": "Vous intervenez à Montpellier ?",
+        "answer": "Oui, je suis basé à Montpellier et j'interviens sur site dans la région Occitanie. Pour les projets à distance, j'interviens sur toute la France en full remote."
+      },
+      {
+        "question": "En combien de temps peut-on avoir un pipeline CI/CD en place ?",
+        "answer": "Un pipeline CI/CD basique (test → build → deploy sur staging + production) peut être opérationnel en 3 à 5 jours ouvrés selon la complexité de votre stack existante."
+      }
+    ]
+  },
+  "creation_site_content": {
+    "intro": "Un site web professionnel ne se résume pas à un design — il doit se charger vite, bien se référencer sur Google, et convertir vos visiteurs en clients. Je crée des sites sur mesure avec Next.js, SEO intégré, et hébergement inclus.",
+    "section_for_title": "Pour qui ?",
+    "section_for_items": [
+      "Indépendants et consultants qui veulent une présence professionnelle crédible",
+      "PME dont le site actuel ne génère plus de leads",
+      "Artisans et commerçants qui souhaitent être trouvés sur Google localement",
+      "Startups qui ont besoin d'une landing page ou d'un MVP rapide"
+    ],
+    "section_includes_title": "Ce qui est inclus",
+    "section_includes_items": [
+      "Design sur mesure responsive (mobile-first)",
+      "Nom de domaine enregistré à votre nom",
+      "Hébergement haute performance configuré et sécurisé",
+      "SSL gratuit + optimisation des performances (Core Web Vitals)",
+      "SEO technique : balises méta, sitemap, schema.org",
+      "Email professionnel configuré",
+      "Déploiement automatique — mises à jour sans interruption",
+      "Support post-livraison 30 jours inclus"
+    ],
+    "section_timeline_title": "Délais",
+    "section_timeline_text": "Site vitrine : 2 à 3 semaines. Landing page : 1 semaine. Site e-commerce : 4 à 6 semaines. Ces délais incluent les allers-retours de validation.",
+    "faq_title": "Questions fréquentes",
+    "faq": [
+      {
+        "question": "Combien coûte un site web professionnel ?",
+        "answer": "Un site vitrine sur mesure est disponible à partir de 1 500€. Le tarif dépend du nombre de pages, des fonctionnalités et du niveau de personnalisation. Je fournis un devis détaillé sous 48h."
+      },
+      {
+        "question": "Vous créez des sites à Montpellier ?",
+        "answer": "Oui, je suis basé à Montpellier et je travaille aussi bien en présentiel qu'en remote. Tous les projets sont gérés avec les mêmes standards de qualité, quelle que soit la localisation."
+      },
+      {
+        "question": "Puis-je modifier mon site moi-même après la livraison ?",
+        "answer": "Oui. Selon vos besoins, j'intègre un CMS (Sanity, Notion, ou une solution simple) qui vous permet de modifier les textes et les images sans toucher au code."
+      }
+    ]
+  },
+  "app_web_content": {
+    "intro": "Vous avez une idée d'application web mais ne savez pas par où commencer ? Je prends en charge le développement de A à Z : architecture, backend, frontend, déploiement et maintenance. Stack moderne, code propre, livraison rapide.",
+    "section_types_title": "Quel type d'application ?",
+    "section_types_items": [
+      "SaaS : abonnement, authentification, tableau de bord, facturation",
+      "Marketplace ou plateforme B2B",
+      "Application interne (outil de gestion, automatisation de process)",
+      "MVP pour valider votre idée avant de recruter une équipe",
+      "API REST ou GraphQL pour votre mobile app"
+    ],
+    "section_stack_title": "Stack technique",
+    "section_stack_items": [
+      "Frontend : Next.js 15 (App Router, SSR/SSG, SEO natif)",
+      "Backend : Python 3.12 + FastAPI — performant, typé, documenté automatiquement",
+      "Base de données : PostgreSQL 16 — fiable, scalable",
+      "Auth : NextAuth.js ou Supabase Auth",
+      "Déploiement : CI/CD GitHub Actions → AWS ou VPS",
+      "Tests : Pytest (backend) + Playwright (e2e)"
+    ],
+    "section_process_title": "De l'idée à la production",
+    "section_process_items": [
+      "Cadrage : on définit les fonctionnalités prioritaires ensemble (MVP)",
+      "Architecture : choix techniques documentés, pas de dette cachée",
+      "Développement itératif : livraisons régulières, feedback rapide",
+      "Mise en production : CI/CD, monitoring, documentation technique"
+    ],
+    "faq_title": "Questions fréquentes",
+    "faq": [
+      {
+        "question": "Quel est le délai pour développer une application web ?",
+        "answer": "Un MVP (fonctionnalités essentielles) est généralement livré en 6 à 10 semaines. Une application plus complexe prend 3 à 6 mois. Je livre par itérations pour que vous ayez quelque chose de fonctionnel rapidement."
+      },
+      {
+        "question": "Puis-je reprendre la main sur le code après la livraison ?",
+        "answer": "Absolument. Le code est propre, documenté, et hébergé dans votre propre dépôt Git. Je peux former votre équipe technique ou assurer la maintenance si vous préférez."
+      },
+      {
+        "question": "Vous utilisez des technologies récentes ou des solutions éprouvées ?",
+        "answer": "Les deux. Next.js, FastAPI et PostgreSQL sont des technologies matures avec une large communauté. Je n'utilise pas de bibliothèques expérimentales en production."
+      }
+    ]
+  },
+  "clients": {
+    "title": "Ils m'ont fait confiance"
+  },
+  "trusted_by": {
+    "title": "Ils m'ont fait confiance",
+    "seo_text": "Zouhir a travaillé pour des clients comme AMUE, Inetum, Capgemini, Airbus et AIFE en France."
+  },
+  "availability": {
+    "status": "Disponible maintenant",
+    "delay": "Démarrage sous 2 semaines",
+    "remote": "Remote France entière · Déplacement possible"
+  },
+  "stats": {
+    "title": "itinup en chiffres",
+    "s1_label": "Années d'expérience DevOps & Dev",
+    "s2_label": "Projets livrés en production",
+    "s3_label": "Délai de réponse garanti",
+    "s4_label": "Domaines : DevOps · Java · Web"
+  },
+  "tech_stack": {
+    "title": "Ma stack technique",
+    "group_devops": "DevOps & Cloud",
+    "group_dev": "Développement Web",
+    "group_expert": "Expertise Java & Intégration"
+  },
+  "profile_section": {
+    "title": "Qui suis-je ?",
+    "name": "Zouhir Echarif El Idrissi El Kandri",
+    "role": "Freelance DevOps & Développeur Web Senior",
+    "bio": "Basé à Montpellier (Hérault, Occitanie), j'accompagne depuis plus de 5 ans des startups, PME et grands comptes sur toute la France — Paris, Lyon, Toulouse, Bordeaux, Marseille, Nantes — en full remote. Java Spring Boot, DevOps CI/CD, création de sites web : je livre de A à Z, avec un seul interlocuteur et un tarif transparent.",
+    "location": "Montpellier, France",
+    "availability": "Disponible sous 2 semaines",
+    "adaptability": "Je m'adapte à la stack technique existante de mes clients — Java, Python, Node.js ou toute autre technologie en place — pour répondre au besoin sans imposer une refonte.",
+    "cta": "Discutons de votre mission freelance"
+  },
+  "comparison": {
+    "title": "Freelance itinup ou ESN ?",
+    "subtitle": "Pourquoi des PME choisissent un freelance senior plutôt qu'une agence.",
+    "col_freelance": "Freelance itinup",
+    "col_agency": "ESN / Agence",
+    "row1_label": "Délai de démarrage",
+    "row1_freelance": "1 à 2 semaines",
+    "row1_agency": "4 à 8 semaines",
+    "row2_label": "Votre interlocuteur",
+    "row2_freelance": "L'expert qui code",
+    "row2_agency": "Commercial + junior",
+    "row3_label": "Prix",
+    "row3_freelance": "TJM direct, transparent",
+    "row3_agency": "+30 à 50% de marge",
+    "row4_label": "Flexibilité",
+    "row4_freelance": "Courte ou longue durée",
+    "row4_agency": "Engagement minimum",
+    "row5_label": "Propriété du code",
+    "row5_freelance": "100% à vous",
+    "row5_agency": "Variable",
+    "cta": "Démarrer avec itinup"
+  },
+  "blog_preview": {
+    "title": "Du contenu utile, sans jargon",
+    "subtitle": "Guides pratiques et conseils d'expert pour maîtriser votre technique.",
+    "cta": "Voir tous les articles",
+    "read_min": "min de lecture"
+  },
+  "faq_landing": {
+    "title": "Questions fréquentes",
+    "q1": "Quels services propose itinup ?",
+    "a1": "itinup propose des services DevOps (CI/CD, Docker, Kubernetes, AWS), la création de sites web professionnels et le développement d'applications web sur mesure — tout avec un seul interlocuteur et un tarif transparent.",
+    "q2": "Combien de temps faut-il pour livrer un site web ?",
+    "a2": "Un site vitrine est livré en 2 à 3 semaines. Une landing page en 1 semaine. Une application web complète en 6 à 10 semaines.",
+    "q3": "Vous intervenez sur toute la France ?",
+    "a3": "Oui. Basé à Montpellier, j'interviens en full remote pour des clients partout en France et à l'international.",
+    "q4": "Comment se passe la première prise de contact ?",
+    "a4": "Envoyez un message via le formulaire ou WhatsApp. Je vous réponds sous 24h pour un échange de 30 minutes, gratuit et sans engagement.",
+    "q5": "Puis-je confier une mission courte ou longue durée ?",
+    "a5": "Les deux. J'accepte aussi bien des missions courtes (audit, sprint ciblé) que des collaborations longue durée (retainer mensuel, maintenance continue)."
+  },
+  "contact_content": {
+    "h1": "Discutons de votre projet",
+    "subtitle": "Décrivez votre besoin et je vous réponds en moins de 24h. Pas de jargon technique, juste une conversation honnête.",
+    "form_name": "Votre nom",
+    "form_name_placeholder": "Jean Dupont",
+    "form_email": "Votre email",
+    "form_email_placeholder": "jean@exemple.fr",
+    "form_message": "Votre projet",
+    "form_message_placeholder": "Décrivez votre projet, votre besoin, ou votre question...",
+    "form_submit": "Envoyer le message",
+    "rgpd_notice": "Vos données sont utilisées uniquement pour répondre à votre demande. Aucun démarchage, aucune revente. Conformément au RGPD, vous pouvez demander leur suppression à tout moment à contact@itinup.com",
+    "or_separator": "ou",
+    "whatsapp_label": "Réponse immédiate sur WhatsApp",
+    "address_title": "Adresse",
+    "email_title": "Email",
+    "whatsapp_title": "WhatsApp"
+  },
+  "services_page": {
+    "h1": "Tout le technique, géré par un seul expert",
+    "subtitle": "Un seul freelance senior pour toute votre technique — de l'infrastructure cloud à la mise en ligne de votre site.",
+    "s1_badge": "Service principal",
+    "s1_title": "DevOps & Cloud",
+    "s1_benefit": "Votre app déployée en 1 clic, sans coupure de service",
+    "s1_desc": "Mise en place de pipelines CI/CD avec GitHub Actions, Docker et AWS. Votre infrastructure en production, stable, automatisée et monitorée.",
+    "s1_stack": ["CI/CD", "Docker", "Kubernetes", "AWS", "Terraform", "Ansible"],
+    "s1_cta": "Demander un devis DevOps",
+    "s2_title": "Développement web sur mesure",
+    "s2_benefit": "De l'idée à vos premiers utilisateurs en 4 à 6 semaines",
+    "s2_desc": "Application web complète, de la base de données à l'interface. Stack moderne, code propre, déployé et documenté.",
+    "s2_stack": ["Next.js", "FastAPI", "PostgreSQL", "TypeScript"],
+    "s2_cta": "Discuter de mon projet",
+    "s3_title": "Site web professionnel",
+    "s3_benefit": "Un site qui génère des contacts dès les premières semaines",
+    "s3_desc": "Design moderne orienté conversion, SEO intégré dès le départ, livré en 3 semaines avec hébergement configuré.",
+    "s3_stack": ["Next.js", "Tailwind", "SEO", "SSR"],
+    "s3_cta": "Voir les tarifs",
+    "s4_title": "Java Spring Boot Freelance",
+    "s4_benefit": "Un expert Java senior disponible en 2 semaines",
+    "s4_desc": "Microservices Spring Boot, APIs REST, migration cloud. Code livré, documenté, vous en êtes propriétaire.",
+    "s4_stack": ["Java 17+", "Spring Boot 3", "Spring Cloud", "PostgreSQL", "Docker"],
+    "s4_cta": "En savoir plus",
+    "s5_title": "Intégration TIBCO Freelance",
+    "s5_benefit": "Vos flux TIBCO opérationnels sans délais ESN",
+    "s5_desc": "BusinessWorks 5.x/6.x, EMS, BWCE sur Kubernetes. Migration, maintenance et développement de nouveaux flux.",
+    "s5_stack": ["TIBCO BW", "EMS", "BWCE", "Kubernetes", "JMS"],
+    "s5_cta": "En savoir plus",
+    "keyman_title": "Offre clé en main",
+    "keyman_benefit": "Zéro gestion technique. Pour toujours.",
+    "keyman_desc": "Une agence vous livre un site. Moi je vous livre un système qui fonctionne — déploiement automatique, hébergement inclus, zéro intervention manuelle de votre côté.",
+    "keyman_checklist": [
+      "Nom de domaine inclus",
+      "Hébergement configuré et sécurisé",
+      "Déploiement automatique (CI/CD)",
+      "Email professionnel",
+      "SSL + performances optimisées",
+      "Support post-livraison inclus"
+    ],
+    "keyman_tagline": "Un seul interlocuteur. Un seul paiement. Zéro surprise.",
+    "keyman_cta": "Je veux cette offre",
+    "keyman_teaser": "Domaine · Hébergement · CI/CD · Support",
+    "reassurance_1": "Devis sous 24h",
+    "reassurance_2": "Sans engagement",
+    "reassurance_3": "Basé à Montpellier — Remote possible",
+    "reassurance_4": "Code livré, documenté, vous en êtes propriétaire",
+    "cta_title": "Un projet en tête ?",
+    "cta_subtitle": "Pas de jargon technique, juste une conversation honnête sur votre besoin.",
+    "cta_primary": "Demander un devis gratuit",
+    "cta_whatsapp": "Discuter sur WhatsApp",
+    "cta_micro": "Réponse sous 24h, sans engagement."
+  },
+  "blog_page_content": {
+    "h1": "Blog — DevOps, Web & Cloud",
+    "subtitle": "Guides pratiques, comparatifs et conseils d'expert pour les PME et startups qui veulent maîtriser leur technique."
+  },
+  "java_spring_boot_content": {
+    "intro": "Vous cherchez un développeur Java Spring Boot senior sans les délais d'une ESN ? Basé à Montpellier, j'interviens en remote sur toute la France pour développer vos microservices, APIs REST et applications Spring Boot — du MVP à la production.",
+    "section_why_title": "Pourquoi est-il difficile de trouver un freelance Java Spring Boot rapidement ?",
+    "section_why_items": [
+      "Les profils Java Spring Boot seniors sont rares — les ESN les monopolisent avec des contrats longs",
+      "Les plateformes freelance regorgent de profils qui se déclarent Java senior sans expérience production réelle",
+      "Un freelance direct vous donne accès à l'expert réel, pas à un commercial qui revend un junior"
+    ],
+    "section_stack_title": "Ce que je livre concrètement",
+    "section_stack_items": [
+      "Spring Boot 3.x — microservices, APIs REST/GraphQL, tests unitaires et d'intégration",
+      "Spring Cloud — Config Server, Eureka, Gateway, Circuit Breaker (Resilience4j)",
+      "Bases de données : PostgreSQL, MySQL, MongoDB — repositories JPA/Hibernate optimisés",
+      "Sécurité : Spring Security, OAuth2, JWT — authentification et autorisation robustes",
+      "CI/CD : Maven/Gradle + GitHub Actions — pipelines test/build/deploy automatisés",
+      "Observabilité : Micrometer, Actuator, Prometheus, Grafana — monitoring production"
+    ],
+    "section_process_title": "Comment je travaille",
+    "section_process_items": [
+      "Échange de cadrage gratuit (30 min) — je comprends votre architecture et vos contraintes",
+      "Proposition technique et devis sous 48h — périmètre clair, délais réels",
+      "Développement itératif avec livraisons régulières — vous voyez l'avancement en temps réel",
+      "Livraison : code propre, tests, documentation, pipeline CI/CD opérationnel"
+    ],
+    "section_usecases_title": "Cas d'usage typiques",
+    "section_usecases_items": [
+      {"title": "Startup / scale-up", "desc": "Votre MVP montre ses limites. Je migre vers Spring Boot avec une architecture microservices scalable, sans tout réécrire en une fois."},
+      {"title": "PME / ETI", "desc": "Votre monolithe Java vieillit. Je découpe progressivement en microservices Spring Boot, API par API, sans interruption de service."},
+      {"title": "DSI grands comptes", "desc": "Votre équipe est en surcharge. J'interviens en renfort pour livrer un module spécifique — SSO, API d'intégration, refactoring."},
+      {"title": "Agences & ESN", "desc": "Vous avez besoin d'un expert Java senior en urgence. Je m'intègre à votre équipe et livre dans les délais."}
+    ],
+    "midcta_heading": "Vous avez un projet Java Spring Boot ?",
+    "midcta_sub": "Premier échange gratuit. Je réponds sous 24h, sans engagement.",
+    "midcta_btn": "Parlons de votre besoin",
+    "geo_title": "Qui je suis",
+    "geo_text": "Je suis Zouhir, développeur Java Spring Boot freelance basé à Montpellier (Hérault, Occitanie). J'interviens en remote sur toute la France — Paris, Lyon, Toulouse, Bordeaux, Marseille, Nantes, Nîmes, Béziers — et sur site en Occitanie pour les missions qui le nécessitent. Mes clients sont des startups, PME, ETI et grands comptes qui ont besoin d'une expertise Java senior rapidement, sans les délais et les coûts d'une ESN.",
+    "faq_title": "Questions fréquentes",
+    "faq": [
+      {"question": "Quel est le tarif d'un freelance Java Spring Boot en France ?", "answer": "Un freelance Java Spring Boot senior facture entre 450 et 700 €/jour en France. Ce tarif varie selon la complexité de l'architecture et la durée de la mission. Pour une mission de 3 mois ou plus, une remise de 10 à 15 % est négociable. Je fournis un devis détaillé sous 24h."},
+      {"question": "En combien de temps peut-on démarrer une mission Java Spring Boot ?", "answer": "Je suis généralement disponible sous 1 à 2 semaines. Après un premier échange de cadrage, je fournis une proposition technique sous 48h. Une mission peut démarrer sous 5 jours ouvrés si le périmètre est clair."},
+      {"question": "Freelance Java Spring Boot ou ESN : quelle différence concrète ?", "answer": "Avec une ESN, vous payez une marge de 30 à 50 % sur le TJM réel du consultant. Avec un freelance, vous interagissez directement avec l'expert qui réalise la mission. Pas d'account manager, pas d'intermédiaire, pas de surprise sur le profil livré."},
+      {"question": "Intervenez-vous à distance ou uniquement à Montpellier ?", "answer": "Je travaille principalement en remote depuis Montpellier pour des clients partout en France — Paris, Lyon, Toulouse, Bordeaux, Nantes, Marseille. Des interventions sur site sont possibles en Occitanie."},
+      {"question": "Quels livrables sont fournis à la fin d'une mission Java Spring Boot ?", "answer": "À la fin de chaque mission : code versionné dans votre dépôt Git, tests unitaires et d'intégration, documentation technique OpenAPI/Swagger, pipeline CI/CD fonctionnel, et guide de déploiement. Vous êtes propriétaire de tout le code."},
+      {"question": "Avez-vous travaillé sur des migrations monolithe vers microservices ?", "answer": "Oui. J'ai accompagné des migrations de monolithes Java vers des architectures microservices Spring Boot. La clé est une approche progressive — Strangler Fig Pattern — pour ne pas interrompre le service existant."},
+      {"question": "Pouvez-vous intervenir sur une application Spring Boot existante ?", "answer": "Oui. Je peux reprendre une application existante pour l'auditer, corriger des problèmes de performance, ajouter des fonctionnalités, ou améliorer la couverture de tests. Pas besoin de repartir de zéro."},
+      {"question": "Travaillez-vous avec des équipes Agile / Scrum ?", "answer": "Oui. Je m'adapte aux rituels Agile existants — sprint planning, daily, code review, retrospective. Je peux aussi proposer une organisation légère si vous n'en avez pas encore."}
+    ],
+    "internal_links_label": "À lire aussi",
+    "link_devops": "DevOps & CI/CD — infra cloud pour vos apps Java",
+    "link_services": "Tous les services",
+    "link_blog": "Freelance vs ESN : comparatif honnête",
+    "cta_heading": "Vous avez un projet Java Spring Boot ?",
+    "cta_sub": "Devis gratuit sous 24h, sans engagement.",
+    "cta_primary": "Demander un devis gratuit",
+    "cta_whatsapp": "Discuter sur WhatsApp",
+    "cta_micro": "Réponse sous 24h · Sans engagement"
+  },
+  "tibco_content": {
+    "intro": "Vous cherchez un consultant TIBCO freelance pour une mission d'intégration, de migration ou de maintenance ? Basé à Montpellier, j'interviens en remote sur toute la France pour des missions TIBCO BusinessWorks, EMS et BWCE — PME, ETI et grands comptes.",
+    "section_why_title": "Pourquoi est-il si difficile de trouver un consultant TIBCO senior rapidement ?",
+    "section_why_items": [
+      "Les compétences TIBCO sont rares — peu de profils seniors disponibles en dehors des grandes ESN",
+      "Les DSI attendent souvent 4 à 8 semaines pour sourcer un consultant TIBCO via une ESN, avec une marge de 30 à 50 %",
+      "En passant en direct par un freelance TIBCO, vous démarrez sous 2 semaines au tarif réel de l'expert"
+    ],
+    "section_stack_title": "Ce que je maîtrise et livre",
+    "section_stack_items": [
+      "TIBCO BusinessWorks 5.x / 6.x — développement, optimisation et migration de processus",
+      "TIBCO EMS — configuration des files, topics, bridges, performance et sécurité",
+      "TIBCO BW Container Edition (BWCE) — déploiement cloud sur Kubernetes",
+      "TIBCO Spotfire — tableaux de bord, analytics, connexion aux sources de données",
+      "Intégration middleware — connecteurs JMS, REST, SOAP, FTP, base de données",
+      "Documentation technique et transfert de compétences inclus"
+    ],
+    "section_process_title": "Comment je travaille",
+    "section_process_items": [
+      "Analyse de votre contexte TIBCO existant (gratuit, 30 min)",
+      "Proposition technique avec périmètre clair et délais réalistes sous 48h",
+      "Développement ou migration itérative — livraisons validables à chaque étape",
+      "Livraison : processus testés, documentés, pipelines de déploiement configurés"
+    ],
+    "section_usecases_title": "Cas d'usage typiques",
+    "section_usecases_items": [
+      {"title": "Migration BW 5.x → BWCE", "desc": "Votre DSI veut migrer vers une architecture cloud native. J'analyse vos processus BW existants et migre progressivement vers BWCE sur Kubernetes."},
+      {"title": "Maintenance et évolution", "desc": "Votre équipe manque de ressources TIBCO. J'interviens en renfort pour maintenir les flux existants et développer les nouvelles intégrations."},
+      {"title": "Intégration SI complexe", "desc": "Vous avez un projet d'intégration entre un ERP (SAP, Oracle) et des applicatifs métier. Je conçois les flux TIBCO avec gestion des erreurs et mécanismes de reprise."},
+      {"title": "DSI en transition", "desc": "Vous évaluez une migration vers une autre plateforme (MuleSoft, Apache Camel). Je réalise l'audit de vos flux TIBCO et documente l'architecture cible."}
+    ],
+    "midcta_heading": "Vous avez un projet TIBCO ?",
+    "midcta_sub": "Premier échange gratuit. Je réponds sous 24h, sans engagement.",
+    "midcta_btn": "Parlons de votre besoin",
+    "geo_title": "Qui je suis",
+    "geo_text": "Je suis Zouhir, consultant TIBCO freelance basé à Montpellier (Hérault, Occitanie). J'interviens en remote sur toute la France — Paris, Lyon, Toulouse, Bordeaux, Marseille, Nantes, Nîmes, Béziers — et sur site en Occitanie pour les missions qui le nécessitent. Mes clients sont des PME, ETI et grands comptes qui ont besoin d'une expertise TIBCO disponible rapidement, sans les délais et les coûts d'une ESN.",
+    "faq_title": "Questions fréquentes",
+    "faq": [
+      {"question": "Quel est le tarif d'un consultant TIBCO freelance en France ?", "answer": "Un consultant TIBCO freelance expérimenté facture entre 500 et 800 €/jour en France. La rareté de ces profils et la complexité des projets justifient ce positionnement. Pour une mission longue (3 mois+), une remise est envisageable. Devis transparent sous 24h."},
+      {"question": "En combien de temps peut-on démarrer une mission TIBCO ?", "answer": "Je suis disponible sous 1 à 2 semaines. Après un premier échange de 30 minutes, je fournis une proposition de mission sous 48h. Pour les urgences, un démarrage sous 5 jours ouvrés est possible."},
+      {"question": "Freelance TIBCO ou ESN : quelle différence concrète ?", "answer": "Une ESN facture 30 à 50 % de marge sur le TJM réel du consultant. Avec un freelance, vous signez directement avec l'expert qui réalise la mission. Pas de commercial, pas d'intermédiaire, TJM transparent."},
+      {"question": "Intervenez-vous à distance ou uniquement à Montpellier ?", "answer": "Je travaille principalement en remote depuis Montpellier pour des clients partout en France. Des interventions sur site sont possibles en Occitanie (Montpellier, Toulouse, Nîmes) et ponctuellement à Paris ou Lyon."},
+      {"question": "Quels livrables sont fournis à la fin d'une mission TIBCO ?", "answer": "À la fin d'une mission : processus TIBCO documentés, diagrammes d'architecture d'intégration, guide de déploiement, procédures de monitoring et de reprise sur incident. Tout est livré dans votre dépôt de code existant."},
+      {"question": "Avez-vous travaillé sur des migrations TIBCO BW 5.x vers BWCE ?", "answer": "Oui. La migration de TIBCO BusinessWorks 5.x vers BWCE est l'une des demandes les plus fréquentes. Elle implique une analyse des flux existants, une refactorisation partielle pour Kubernetes, et une stratégie de déploiement blue/green pour minimiser les interruptions."},
+      {"question": "Peut-on faire coexister TIBCO BW 5.x et BWCE pendant une migration ?", "answer": "Oui, c'est la stratégie recommandée. Les deux versions coexistent pendant la transition — les nouveaux processus en BWCE, les anciens restent en BW 5.x jusqu'à migration complète. Je dimensionne la stratégie selon votre contexte."},
+      {"question": "Intervenez-vous sur des projets TIBCO Spotfire ?", "answer": "Oui. J'interviens sur la conception de tableaux de bord Spotfire, la connexion aux sources de données (SQL, REST, fichiers), et l'optimisation des performances analytiques."}
+    ],
+    "internal_links_label": "À lire aussi",
+    "link_devops": "DevOps & CI/CD — pour déployer vos intégrations TIBCO",
+    "link_services": "Tous les services",
+    "link_blog": "Freelance vs ESN : comparatif honnête",
+    "cta_heading": "Vous avez un projet TIBCO ?",
+    "cta_sub": "Devis gratuit sous 24h, sans engagement.",
+    "cta_primary": "Demander un devis gratuit",
+    "cta_whatsapp": "Discuter sur WhatsApp",
+    "cta_micro": "Réponse sous 24h · Sans engagement"
+  }
+}
