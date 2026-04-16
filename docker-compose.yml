@@ -15,14 +15,7 @@ services:
     networks:
       - traefik_public
     labels:
-      - "traefik.enable=true"
-      # Dashboard — accessible at https://traefik.itinup.com (secured with BasicAuth)
-      - "traefik.http.routers.dashboard.rule=Host(`traefik.itinup.com`)"
-      - "traefik.http.routers.dashboard.entrypoints=websecure"
-      - "traefik.http.routers.dashboard.service=api@internal"
-      - "traefik.http.routers.dashboard.middlewares=auth"
-      # htpasswd: admin / changeme  →  generate with: htpasswd -nb admin yourpassword
-      - "traefik.http.middlewares.auth.basicauth.users=admin:$$apr1$$xyz$$changeme"
+      - "traefik.enable=false"
 
   # ── Next.js app ────────────────────────────────────────────
   app:

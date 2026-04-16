@@ -1,7 +1,7 @@
 # ── Traefik static configuration ──────────────────────────────
 
 api:
-  dashboard: true
+  dashboard: false
 
 log:
   level: INFO
