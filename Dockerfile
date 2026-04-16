@@ -2,12 +2,14 @@
 # Stage 1 — install dependencies
 # ──────────────────────────────────────────────────────────────
 FROM node:22-alpine AS deps
-
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
-COPY package.json package-lock.json* ./
-RUN npm ci --frozen-lockfile
+# Activer pnpm via corepack
+RUN corepack enable && corepack prepare pnpm@latest --activate
+
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile
 
 # ──────────────────────────────────────────────────────────────
 # Stage 2 — build
@@ -15,13 +17,14 @@ RUN npm ci --frozen-lockfile
 FROM node:22-alpine AS builder
 WORKDIR /app
 
+RUN corepack enable && corepack prepare pnpm@latest --activate
+
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-# Disable Next.js telemetry at build time
 ENV NEXT_TELEMETRY_DISABLED=1
 
-RUN npm run build
+RUN pnpm build
 
 # ──────────────────────────────────────────────────────────────
 # Stage 3 — production runner (standalone output)
@@ -40,11 +43,10 @@ RUN addgroup --system --gid 1001 nodejs && \
 
 # Copy standalone build + static assets
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
-COPY --from=builder --chown=nextjs:nodejs /app/.next/static    ./.next/static
-COPY --from=builder --chown=nextjs:nodejs /app/public          ./public
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static     ./.next/static
+COPY --from=builder --chown=nextjs:nodejs /app/public           ./public
 
 USER nextjs
 
 EXPOSE 3000
-
 CMD ["node", "server.js"]

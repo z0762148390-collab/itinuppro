@@ -109,8 +109,8 @@ export default function CloudNetwork() {
       /* draw connections */
       for (let i = 0; i < nodes.length; i++) {
         for (let j = i + 1; j < nodes.length; j++) {
-          const a   = nodes[i];
-          const b   = nodes[j];
+          const a   = nodes[i]!;
+          const b   = nodes[j]!;
           const dx  = a.x - b.x;
           const dy  = a.y - b.y;
           const d   = Math.sqrt(dx * dx + dy * dy);
