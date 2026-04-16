@@ -1,0 +1,11 @@
+# 1. Créer le fichier acme.json (stockage des certs Let's Encrypt)
+mkdir -p traefik && touch traefik/acme.json && chmod 600 traefik/acme.json
+
+# 2. Générer le mot de passe du dashboard Traefik
+htpasswd -nb admin *********
+# → copier le hash dans docker-compose.yml (label basicauth.users)
+
+# 3. Copier .env.local sur le serveur avec les vraies valeurs
+
+# 4. Lancer
+docker compose up -d --build
