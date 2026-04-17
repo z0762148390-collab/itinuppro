@@ -17,9 +17,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `${SITE.url}/${locale}/creation-site-web-application`,
       languages: {
-        fr: `${SITE.url}/fr/creation-site-web-application`,
-        en: `${SITE.url}/en/creation-site-web-application`,
-        ar: `${SITE.url}/ar/creation-site-web-application`,
+        fr:          `${SITE.url}/fr/creation-site-web-application`,
+        en:          `${SITE.url}/en/creation-site-web-application`,
+        ar:          `${SITE.url}/ar/creation-site-web-application`,
+        'x-default': `${SITE.url}/fr/creation-site-web-application`,
       },
     },
     keywords: [

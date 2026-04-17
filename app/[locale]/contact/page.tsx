@@ -11,7 +11,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'pages.contact' });
   return {
     title: t('title'), description: t('description'),
-    alternates: { canonical: `${SITE.url}/${locale}/contact` },
+    alternates: {
+      canonical: `${SITE.url}/${locale}/contact`,
+      languages: {
+        fr:          `${SITE.url}/fr/contact`,
+        en:          `${SITE.url}/en/contact`,
+        ar:          `${SITE.url}/ar/contact`,
+        'x-default': `${SITE.url}/fr/contact`,
+      },
+    },
   };
 }
 

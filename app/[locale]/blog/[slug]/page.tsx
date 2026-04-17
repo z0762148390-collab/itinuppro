@@ -6,6 +6,7 @@ import JsonLd from '@/components/ui/JsonLd';
 import { Link } from '@/navigation';
 import { getPost, getAllSlugs, AUTHOR, BLOG_POSTS, type Block } from '@/lib/blog-posts';
 import { getBlogPostingSchema, getBreadcrumbSchema } from '@/lib/schemas';
+import BlogInternalLinks from '@/components/blog/BlogInternalLinks';
 
 interface Props {
   params: Promise<{ locale: string; slug: string }>;
@@ -33,9 +34,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: url,
       languages: {
-        fr: `${SITE.url}/fr/blog/${slug}`,
-        en: `${SITE.url}/en/blog/${slug}`,
-        ar: `${SITE.url}/ar/blog/${slug}`,
+        fr:          `${SITE.url}/fr/blog/${slug}`,
+        en:          `${SITE.url}/en/blog/${slug}`,
+        ar:          `${SITE.url}/ar/blog/${slug}`,
+        'x-default': `${SITE.url}/fr/blog/${slug}`,
       },
     },
     openGraph: {
@@ -319,6 +321,9 @@ export default async function BlogPostPage({ params }: Props) {
                 </a>
               </div>
             )}
+
+            {/* Internal links */}
+            <BlogInternalLinks locale={locale} />
 
             {/* CTA */}
             <div className="mt-10 card p-8 text-center">

@@ -60,12 +60,6 @@ export default async function LocaleLayout({ children, params }: Props) {
       className={fontVariable}
     >
       <head>
-        {/* hreflang for all supported locales */}
-        <link rel="alternate" hrefLang="fr" href={`${SITE.url}/fr`} />
-        <link rel="alternate" hrefLang="en" href={`${SITE.url}/en`} />
-        <link rel="alternate" hrefLang="ar" href={`${SITE.url}/ar`} />
-        <link rel="alternate" hrefLang="x-default" href={`${SITE.url}/fr`} />
-
         {/* Global structured data on every page */}
         <JsonLd schema={[getPersonSchema(), getOrganizationSchema()]} />
       </head>

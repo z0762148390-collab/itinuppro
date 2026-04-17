@@ -15,19 +15,26 @@ interface SitemapEntry {
 }
 
 const routes = [
-  { path: '',                                   priority: 1.0, changeFrequency: 'weekly'  as ChangeFrequency },
-  { path: '/services',                          priority: 0.9, changeFrequency: 'monthly' as ChangeFrequency },
-  { path: '/devops-france',                     priority: 0.9, changeFrequency: 'monthly' as ChangeFrequency },
-  { path: '/devops-montpellier',                priority: 0.8, changeFrequency: 'monthly' as ChangeFrequency },
-  { path: '/creation-site-france',              priority: 0.9, changeFrequency: 'monthly' as ChangeFrequency },
-  { path: '/creation-site-montpellier',         priority: 0.8, changeFrequency: 'monthly' as ChangeFrequency },
-  { path: '/creation-site-web-application',     priority: 0.9, changeFrequency: 'monthly' as ChangeFrequency },
-  { path: '/application-web-france',            priority: 0.9, changeFrequency: 'monthly' as ChangeFrequency },
-  { path: '/java-spring-boot-freelance-france', priority: 0.8, changeFrequency: 'monthly' as ChangeFrequency },
-  { path: '/tibco-freelance-france',            priority: 0.8, changeFrequency: 'monthly' as ChangeFrequency },
-  { path: '/blog',                              priority: 0.8, changeFrequency: 'weekly'  as ChangeFrequency },
-  { path: '/contact',                           priority: 0.7, changeFrequency: 'yearly'  as ChangeFrequency },
-  { path: '/mentions-legales',                  priority: 0.3, changeFrequency: 'yearly'  as ChangeFrequency },
+  // Accueil
+  { path: '',                                        priority: 1.0, changeFrequency: 'weekly'  as ChangeFrequency },
+  // Pages SEO principales — priorité maximale
+  { path: '/devops-france',                          priority: 1.0, changeFrequency: 'monthly' as ChangeFrequency },
+  { path: '/creation-site-france',                   priority: 1.0, changeFrequency: 'monthly' as ChangeFrequency },
+  { path: '/creation-site-web-application',          priority: 1.0, changeFrequency: 'monthly' as ChangeFrequency },
+  { path: '/application-web-france',                 priority: 1.0, changeFrequency: 'monthly' as ChangeFrequency },
+  { path: '/java-spring-boot-freelance-france',      priority: 1.0, changeFrequency: 'monthly' as ChangeFrequency },
+  { path: '/tibco-freelance-france',                 priority: 1.0, changeFrequency: 'monthly' as ChangeFrequency },
+  // Pages GEO SEO locales
+  { path: '/devops-montpellier',                     priority: 0.9, changeFrequency: 'monthly' as ChangeFrequency },
+  { path: '/creation-site-montpellier',              priority: 0.9, changeFrequency: 'monthly' as ChangeFrequency },
+  { path: '/java-spring-montpellier',                priority: 0.9, changeFrequency: 'monthly' as ChangeFrequency },
+  { path: '/developpeur-backend-montpellier',        priority: 0.9, changeFrequency: 'monthly' as ChangeFrequency },
+  { path: '/tibco-montpellier',                      priority: 0.9, changeFrequency: 'monthly' as ChangeFrequency },
+  // Pages secondaires
+  { path: '/services',                               priority: 0.8, changeFrequency: 'monthly' as ChangeFrequency },
+  { path: '/blog',                                   priority: 0.7, changeFrequency: 'weekly'  as ChangeFrequency },
+  { path: '/contact',                                priority: 0.6, changeFrequency: 'yearly'  as ChangeFrequency },
+  { path: '/mentions-legales',                       priority: 0.3, changeFrequency: 'yearly'  as ChangeFrequency },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

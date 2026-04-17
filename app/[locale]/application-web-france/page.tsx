@@ -20,9 +20,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `${SITE.url}/${locale}/application-web-france`,
       languages: {
-        fr: `${SITE.url}/fr/application-web-france`,
-        en: `${SITE.url}/en/application-web-france`,
-        ar: `${SITE.url}/ar/application-web-france`,
+        fr:          `${SITE.url}/fr/application-web-france`,
+        en:          `${SITE.url}/en/application-web-france`,
+        ar:          `${SITE.url}/ar/application-web-france`,
+        'x-default': `${SITE.url}/fr/application-web-france`,
       },
     },
     keywords: ['développement application web freelance', 'dev web sur mesure france', 'nextjs fastapi freelance'],

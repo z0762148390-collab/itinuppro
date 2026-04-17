@@ -20,9 +20,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `${SITE.url}/${locale}/creation-site-france`,
       languages: {
-        fr: `${SITE.url}/fr/creation-site-france`,
-        en: `${SITE.url}/en/creation-site-france`,
-        ar: `${SITE.url}/ar/creation-site-france`,
+        fr:          `${SITE.url}/fr/creation-site-france`,
+        en:          `${SITE.url}/en/creation-site-france`,
+        ar:          `${SITE.url}/ar/creation-site-france`,
+        'x-default': `${SITE.url}/fr/creation-site-france`,
       },
     },
     keywords: ['création site web freelance france', 'site web professionnel pas cher', 'site web avec hébergement inclus'],

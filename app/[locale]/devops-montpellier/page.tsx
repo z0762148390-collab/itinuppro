@@ -20,9 +20,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `${SITE.url}/${locale}/devops-montpellier`,
       languages: {
-        fr: `${SITE.url}/fr/devops-montpellier`,
-        en: `${SITE.url}/en/devops-montpellier`,
-        ar: `${SITE.url}/ar/devops-montpellier`,
+        fr:          `${SITE.url}/fr/devops-montpellier`,
+        en:          `${SITE.url}/en/devops-montpellier`,
+        ar:          `${SITE.url}/ar/devops-montpellier`,
+        'x-default': `${SITE.url}/fr/devops-montpellier`,
       },
     },
     keywords: ['devops montpellier', 'freelance devops montpellier', 'consultant devops occitanie'],

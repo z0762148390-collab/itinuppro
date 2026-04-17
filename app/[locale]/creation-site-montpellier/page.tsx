@@ -20,9 +20,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `${SITE.url}/${locale}/creation-site-montpellier`,
       languages: {
-        fr: `${SITE.url}/fr/creation-site-montpellier`,
-        en: `${SITE.url}/en/creation-site-montpellier`,
-        ar: `${SITE.url}/ar/creation-site-montpellier`,
+        fr:          `${SITE.url}/fr/creation-site-montpellier`,
+        en:          `${SITE.url}/en/creation-site-montpellier`,
+        ar:          `${SITE.url}/ar/creation-site-montpellier`,
+        'x-default': `${SITE.url}/fr/creation-site-montpellier`,
       },
     },
     keywords: ['création site web montpellier', 'agence web montpellier', 'site web professionnel montpellier'],
