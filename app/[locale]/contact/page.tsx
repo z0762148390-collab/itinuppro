@@ -36,36 +36,15 @@ export default async function ContactPage({ params }: Props) {
           </div>
 
           {/* Sidebar */}
-          <aside className="md:col-span-2 flex flex-col gap-8 rtl:text-right">
-            {[
-              {
-                label: t('email_title'),
-                content: <a href={`mailto:${SITE.email}`}
-                            className="text-brand-400 hover:underline text-sm">{SITE.email}</a>,
-              },
-              {
-                label: t('whatsapp_title'),
-                content: (
-                  <>
-                    <a href={SITE.whatsapp} target="_blank" rel="noopener noreferrer"
-                       className="text-green-400 hover:underline text-sm">{SITE.whatsappNumber}</a>
-                    <p className="text-slate-600 text-xs mt-1">{t('whatsapp_label')}</p>
-                  </>
-                ),
-              },
-              {
-                label: t('address_title'),
-                content: <a href={SITE.googleMaps} target="_blank" rel="noopener noreferrer"
-                            className="text-slate-500 hover:text-slate-300 text-sm leading-relaxed hover:underline">
-                           1218 Avenue du Père Soulas<br/>34000 Montpellier, France
-                         </a>,
-              },
-            ].map(({ label, content }) => (
-              <div key={label} className="card p-5">
-                <p className="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2">{label}</p>
-                {content}
-              </div>
-            ))}
+          <aside className="md:col-span-2 rtl:text-right">
+            <div className="card p-5">
+              <p className="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2">
+                {t('whatsapp_title')}
+              </p>
+              <a href={SITE.whatsapp} target="_blank" rel="noopener noreferrer"
+                 className="text-green-400 hover:underline text-sm">{SITE.whatsappNumber}</a>
+              <p className="text-slate-600 text-xs mt-1">{t('whatsapp_label')}</p>
+            </div>
           </aside>
         </div>
       </div>
