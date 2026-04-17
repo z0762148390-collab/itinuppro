@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { SITE } from '@/lib/constants';
+import { Suspense } from 'react';
 import ContactForm from './ContactForm';
 
 interface Props { params: Promise<{ locale: string }> }
@@ -29,7 +30,9 @@ export default async function ContactPage({ params }: Props) {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
           {/* Form */}
           <div className="md:col-span-3">
-            <ContactForm locale={locale}/>
+            <Suspense fallback={<div className="h-96 rounded-2xl bg-slate-800/30 animate-pulse" />}>
+              <ContactForm locale={locale}/>
+            </Suspense>
           </div>
 
           {/* Sidebar */}

@@ -5,6 +5,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useTranslations } from 'next-intl';
 import { useRef } from 'react';
+import { useSearchParams } from 'next/navigation';
 
 const schema = z.object({
   name:    z.string().min(2, 'Minimum 2 caractères'),
@@ -14,6 +15,92 @@ const schema = z.object({
 });
 
 type FormData = z.infer<typeof schema>;
+
+/* ─── Presets par service ─────────────────────────────────────── */
+const PRESETS: Record<string, { message: string; budget?: string }> = {
+  'site-vitrine': {
+    message: `Bonjour,
+
+Je souhaite créer un site vitrine professionnel pour mon activité.
+
+Mon activité : [précisez votre métier]
+Ce que j'attends du site : [ex. présenter mes services, recevoir des demandes de devis]
+Avez-vous des exemples de sites que vous aimez ? [optionnel]`,
+    budget: '< 500€',
+  },
+  'application': {
+    message: `Bonjour,
+
+J'ai un projet d'application web sur mesure.
+
+Mon besoin : [décrivez ce que l'application doit faire]
+Les utilisateurs concernés : [ex. mes clients, mon équipe]
+Fonctionnalités principales : [ex. espace client, réservation, tableau de bord]`,
+    budget: '1 500–5 000€',
+  },
+  'cle-en-main': {
+    message: `Bonjour,
+
+Je suis intéressé par l'offre clé en main (site + hébergement + maintenance).
+
+Mon activité : [précisez]
+J'ai déjà un site : [oui / non]
+Ce que j'attends : [ex. être visible en ligne sans gérer la technique]`,
+    budget: '< 500€',
+  },
+  'refonte': {
+    message: `Bonjour,
+
+Je souhaite refondre mon site existant.
+
+URL de mon site actuel : [votre URL]
+Problème principal : [ex. trop vieux, pas adapté mobile, ne génère pas de clients]
+Budget approximatif : [optionnel]`,
+    budget: '500–1 500€',
+  },
+  'devops': {
+    message: `Bonjour,
+
+J'ai une mission DevOps / Infrastructure Cloud à pourvoir.
+
+Contexte de la mission : [décrivez le projet]
+Compétences recherchées : [ex. Kubernetes, AWS, CI/CD]
+Durée estimée : [ex. 3 mois, TJM cible]
+Remote / sur site : [précisez]`,
+    budget: '> 5 000€',
+  },
+  'java': {
+    message: `Bonjour,
+
+J'ai une mission Java / Intégration à pourvoir.
+
+Contexte de la mission : [décrivez le projet]
+Stack technique : [ex. Java 21, Spring Boot, TIBCO BW]
+Durée estimée : [ex. 6 mois, TJM cible]
+Remote / sur site : [précisez]`,
+    budget: '> 5 000€',
+  },
+  'web-mission': {
+    message: `Bonjour,
+
+J'ai une mission de développement web à pourvoir.
+
+Contexte : [décrivez le projet]
+Stack technique : [ex. Next.js, TypeScript, API REST]
+Durée estimée : [ex. 2 mois, TJM cible]
+Remote / sur site : [précisez]`,
+    budget: '> 5 000€',
+  },
+  'audit': {
+    message: `Bonjour,
+
+Je souhaite un audit technique.
+
+Ce que je veux auditer : [ex. mon infrastructure, mon code, mon architecture]
+Contexte : [décrivez votre situation actuelle]
+Objectif de l'audit : [ex. avant une refonte, optimiser les performances]`,
+  },
+};
 
 const BUDGETS = [
   { value: '',           label: 'Budget (optionnel)' },
@@ -34,13 +121,23 @@ export default function ContactForm({ locale }: { locale: string }) {
   const t = useTranslations('contact_content');
   const loadTimeRef = useRef<number>(Date.now());
   const honeypotRef = useRef<HTMLInputElement>(null);
+  const searchParams = useSearchParams();
+
+  const service  = searchParams.get('service') ?? '';
+  const preset   = PRESETS[service];
 
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors, isSubmitting, isSubmitSuccessful },
-  } = useForm<FormData>({ resolver: zodResolver(schema) });
+  } = useForm<FormData>({
+    resolver: zodResolver(schema),
+    defaultValues: {
+      message: preset?.message ?? '',
+      budget:  preset?.budget  ?? '',
+    },
+  });
 
   async function onSubmit(data: FormData) {
     const res = await fetch('/api/contact', {
@@ -76,8 +173,29 @@ export default function ContactForm({ locale }: { locale: string }) {
     );
   }
 
+  const SERVICE_LABELS: Record<string, string> = {
+    'site-vitrine':  'Site vitrine professionnel',
+    'application':   'Application web sur mesure',
+    'cle-en-main':   'Offre clé en main',
+    'refonte':       'Refonte de site existant',
+    'devops':        'Mission DevOps & Cloud',
+    'java':          'Mission Java & Intégration',
+    'web-mission':   'Mission développement web',
+    'audit':         'Audit & Conseil technique',
+  };
+
   return (
     <form onSubmit={handleSubmit(onSubmit)} noValidate className="flex flex-col gap-5">
+      {/* Badge service pré-sélectionné */}
+      {preset && service in SERVICE_LABELS && (
+        <div className="flex items-center gap-2.5 px-4 py-3 rounded-xl
+                        bg-brand-600/10 border border-brand-600/20 text-sm">
+          <span className="w-2 h-2 rounded-full bg-brand-400 shrink-0" aria-hidden="true" />
+          <span className="text-slate-400">
+            Demande pour : <span className="text-brand-400 font-medium">{SERVICE_LABELS[service]}</span>
+          </span>
+        </div>
+      )}
       {/* Honeypot — invisible to humans, bots fill it automatically */}
       <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', opacity: 0, pointerEvents: 'none' }}>
         <label htmlFor="website">Website</label>
