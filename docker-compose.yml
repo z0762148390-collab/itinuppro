@@ -2,9 +2,11 @@ services:
 
   # ── Traefik — reverse proxy + TLS ──────────────────────────
   traefik:
-    image: traefik:v3.3
+    image: traefik:latest
     container_name: traefik
     restart: unless-stopped
+    environment:
+      - DOCKER_API_VERSION=1.54
     ports:
       - "80:80"
       - "443:443"
@@ -19,9 +21,11 @@ services:
 
   # ── Next.js app ─────────────────────────────────────────────
   app:
-    image: zou34/itinup:latest
+    image: zou34/devops-api:itinup
     container_name: itinuppro
     restart: unless-stopped
+    depends_on:
+      - traefik
     expose:
       - "3000"
     env_file:
@@ -30,25 +34,20 @@ services:
       - traefik_public
     labels:
       - "traefik.enable=true"
-
-      # ── Service port ──
       - "traefik.http.services.app.loadbalancer.server.port=3000"
-
-      # ── HTTP → HTTPS redirect (port 80) ──
+      # HTTP → HTTPS
       - "traefik.http.routers.app-http.rule=Host(`itinup.com`) || Host(`www.itinup.com`)"
       - "traefik.http.routers.app-http.entrypoints=web"
       - "traefik.http.routers.app-http.middlewares=https-redirect"
       - "traefik.http.middlewares.https-redirect.redirectscheme.scheme=https"
       - "traefik.http.middlewares.https-redirect.redirectscheme.permanent=true"
-
-      # ── HTTPS apex (port 443) ──
+      # HTTPS apex
       - "traefik.http.routers.app.rule=Host(`itinup.com`)"
       - "traefik.http.routers.app.entrypoints=websecure"
       - "traefik.http.routers.app.tls=true"
       - "traefik.http.routers.app.tls.certresolver=letsencrypt"
       - "traefik.http.routers.app.service=app"
-
-      # ── www → apex redirect (port 443) ──
+      # www → apex
       - "traefik.http.routers.www-redirect.rule=Host(`www.itinup.com`)"
       - "traefik.http.routers.www-redirect.entrypoints=websecure"
       - "traefik.http.routers.www-redirect.tls=true"
@@ -57,9 +56,6 @@ services:
       - "traefik.http.middlewares.www-to-apex.redirectregex.regex=^https://www\\.itinup\\.com/(.*)"
       - "traefik.http.middlewares.www-to-apex.redirectregex.replacement=https://itinup.com/$${1}"
       - "traefik.http.middlewares.www-to-apex.redirectregex.permanent=true"
-
-    depends_on:
-      - traefik
 
 networks:
   traefik_public:

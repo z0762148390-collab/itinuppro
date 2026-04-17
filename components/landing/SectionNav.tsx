@@ -4,7 +4,7 @@ import { useEffect, useRef, useState, useCallback } from 'react';
 
 function ChevronUp() {
   return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
          stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
          aria-hidden="true">
       <polyline points="18 15 12 9 6 15" />
@@ -14,7 +14,7 @@ function ChevronUp() {
 
 function ChevronDown() {
   return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
          stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
          aria-hidden="true">
       <polyline points="6 9 12 15 18 9" />
@@ -60,55 +60,103 @@ export default function SectionNav() {
   const atBottom = currentIdx === total - 1;
 
   return (
-    <div className="fixed right-3 bottom-6 z-50 flex flex-col gap-2 lg:hidden"
-         role="navigation" aria-label="Navigation entre sections">
-      <button
-        onClick={() => goTo(currentIdx - 1)}
-        disabled={atTop}
-        aria-label="Section précédente"
-        className="w-10 h-10 rounded-full
-                   bg-slate-800/90 backdrop-blur-md
-                   border border-slate-700/60
-                   flex items-center justify-center
-                   text-slate-300
-                   shadow-lg shadow-black/30
-                   transition-all duration-200
-                   hover:bg-slate-700/90 hover:border-slate-500/60 hover:text-white
-                   disabled:opacity-20 disabled:pointer-events-none">
-        <ChevronUp />
-      </button>
+    <>
+      {/* ── Mobile — left side, arrows + dots ─────────────────── */}
+      <div
+        className="fixed left-3 bottom-6 z-50 flex flex-col gap-2 lg:hidden"
+        role="navigation"
+        aria-label="Navigation entre sections">
 
-      {/* Section indicator dots */}
-      <div className="flex flex-col items-center gap-1 py-1">
-        {Array.from({ length: total }).map((_, i) => (
-          <button
-            key={i}
-            onClick={() => goTo(i)}
-            aria-label={`Section ${i + 1}`}
-            className={`rounded-full transition-all duration-200
-              ${i === currentIdx
-                ? 'w-1.5 h-3 bg-brand-400'
-                : 'w-1.5 h-1.5 bg-slate-600 hover:bg-slate-400'
-              }`}
-          />
-        ))}
+        <button
+          onClick={() => goTo(currentIdx - 1)}
+          disabled={atTop}
+          aria-label="Section précédente"
+          className="w-9 h-9 rounded-full
+                     bg-slate-800/90 backdrop-blur-md border border-slate-700/60
+                     flex items-center justify-center text-slate-300
+                     shadow-lg shadow-black/30 transition-all duration-200
+                     hover:bg-slate-700/90 hover:text-white
+                     disabled:opacity-20 disabled:pointer-events-none">
+          <ChevronUp />
+        </button>
+
+        <div className="flex flex-col items-center gap-1.5 py-0.5">
+          {Array.from({ length: total }).map((_, i) => (
+            <button
+              key={i}
+              onClick={() => goTo(i)}
+              aria-label={`Section ${i + 1}`}
+              className={`rounded-full transition-all duration-200
+                ${i === currentIdx
+                  ? 'w-1.5 h-3 bg-brand-400'
+                  : 'w-1.5 h-1.5 bg-slate-600 hover:bg-slate-400'
+                }`}
+            />
+          ))}
+        </div>
+
+        <button
+          onClick={() => goTo(currentIdx + 1)}
+          disabled={atBottom}
+          aria-label="Section suivante"
+          className="w-9 h-9 rounded-full
+                     bg-slate-800/90 backdrop-blur-md border border-slate-700/60
+                     flex items-center justify-center text-slate-300
+                     shadow-lg shadow-black/30 transition-all duration-200
+                     hover:bg-slate-700/90 hover:text-white
+                     disabled:opacity-20 disabled:pointer-events-none">
+          <ChevronDown />
+        </button>
       </div>
 
-      <button
-        onClick={() => goTo(currentIdx + 1)}
-        disabled={atBottom}
-        aria-label="Section suivante"
-        className="w-10 h-10 rounded-full
-                   bg-slate-800/90 backdrop-blur-md
-                   border border-slate-700/60
-                   flex items-center justify-center
-                   text-slate-300
-                   shadow-lg shadow-black/30
-                   transition-all duration-200
-                   hover:bg-slate-700/90 hover:border-slate-500/60 hover:text-white
-                   disabled:opacity-20 disabled:pointer-events-none">
-        <ChevronDown />
-      </button>
-    </div>
+      {/* ── Desktop — right side, arrows + dots, vertically centered ─ */}
+      <div
+        className="hidden lg:flex fixed right-5 top-1/2 -translate-y-1/2 z-50
+                   flex-col items-center gap-2"
+        role="navigation"
+        aria-label="Navigation entre sections">
+
+        <button
+          onClick={() => goTo(currentIdx - 1)}
+          disabled={atTop}
+          aria-label="Section précédente"
+          className="w-8 h-8 rounded-full
+                     bg-slate-800/80 backdrop-blur-md border border-slate-700/50
+                     flex items-center justify-center text-slate-400
+                     transition-all duration-200
+                     hover:bg-slate-700/90 hover:text-white hover:border-slate-500
+                     disabled:opacity-0 disabled:pointer-events-none">
+          <ChevronUp />
+        </button>
+
+        <div className="flex flex-col items-center gap-2 py-1">
+          {Array.from({ length: total }).map((_, i) => (
+            <button
+              key={i}
+              onClick={() => goTo(i)}
+              aria-label={`Section ${i + 1}`}
+              className={`rounded-full transition-all duration-300
+                ${i === currentIdx
+                  ? 'w-2 h-4 bg-brand-400 shadow-[0_0_8px_rgba(99,102,241,0.6)]'
+                  : 'w-2 h-2 bg-slate-600 hover:bg-slate-400'
+                }`}
+            />
+          ))}
+        </div>
+
+        <button
+          onClick={() => goTo(currentIdx + 1)}
+          disabled={atBottom}
+          aria-label="Section suivante"
+          className="w-8 h-8 rounded-full
+                     bg-slate-800/80 backdrop-blur-md border border-slate-700/50
+                     flex items-center justify-center text-slate-400
+                     transition-all duration-200
+                     hover:bg-slate-700/90 hover:text-white hover:border-slate-500
+                     disabled:opacity-0 disabled:pointer-events-none">
+          <ChevronDown />
+        </button>
+      </div>
+    </>
   );
 }
