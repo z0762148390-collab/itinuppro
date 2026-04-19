@@ -1,0 +1,179 @@
+# itinup — Zouhir Echarif El Idrissi El Kandri
+
+> Freelance DevOps senior et développeur web basé à Montpellier, France.
+> Disponible pour missions freelance (remote toute la France) et accompagnement projet tech.
+> SIRET 999 008 329 00016
+
+## À propos
+
+Je m'appelle Zouhir Echarif El Idrissi El Kandri. Je travaille en indépendant depuis plus de 7 ans
+sur des missions DevOps et Java pour des grands comptes (AMUE, Airbus, Capgemini, Inetum, AIFE)
+et je développe des sites web et applications pour des artisans, commerçants et PME partout en France.
+
+Langues de travail : français, anglais, arabe.
+
+Compétences principales :
+- Infrastructure & Cloud : Docker, Kubernetes, AWS, Terraform, Ansible
+- CI/CD & Automatisation : GitHub Actions, Jenkins, ArgoCD
+- Intégration middleware : Java 21, Spring Boot 3, TIBCO BusinessWorks, TIBCO EMS
+- Développement web : Next.js 15, TypeScript, FastAPI, Python
+- Bases de données : PostgreSQL, Redis
+- Observabilité : Prometheus, Grafana, Sentry, OpenTelemetry
+
+## Services & tarifs
+
+### Lancement de projet tech & MVP
+- Accompagnement de l'idée au produit en production
+- Stack : Next.js + FastAPI + PostgreSQL, déployé sur cloud
+- Délai typique : 4 à 6 semaines pour un premier produit fonctionnel
+- Page dédiée : https://itinup.com/fr/lancer-mon-projet
+
+### DevOps & Infrastructure Cloud
+- Mise en place de pipelines CI/CD (GitHub Actions, Docker, Kubernetes)
+- Infrastructure cloud AWS avec Terraform (IaC)
+- Monitoring, alerting, sécurité (Prometheus, Grafana, Trivy)
+- Tarif journalier (TJM) : à partir de 500 €/jour
+- Page dédiée : https://itinup.com/fr/devops-france
+
+### Java & Intégration (Spring Boot, TIBCO)
+- Développement d'API et microservices Java 21 / Spring Boot 3
+- Intégration middleware TIBCO BusinessWorks & EMS
+- Missions en régie ou forfait pour grands comptes et ESN
+- Tarif journalier (TJM) : à partir de 500 €/jour
+- Page dédiée : https://itinup.com/fr/java-spring-boot-freelance-france
+
+### Application web sur mesure
+- Application complète : base de données → API → interface utilisateur
+- Stack : Next.js + FastAPI + PostgreSQL, code livré et documenté
+- De l'idée à vos premiers utilisateurs en 4 à 6 semaines
+- À partir de 1 200 €
+- Page dédiée : https://itinup.com/fr/application-web-france
+
+### Création de site vitrine
+- Site professionnel moderne, axé conversion, SEO technique intégré
+- Livré en 2 à 3 semaines avec hébergement configuré et sécurisé
+- À partir de 490 €
+- Page dédiée : https://itinup.com/fr/creation-site-france
+
+### Offre clé en main (maintenance & hébergement)
+- Nom de domaine + hébergement sécurisé + CI/CD automatique
+- Email professionnel + support post-livraison inclus
+- Zéro gestion technique côté client
+- 49 €/mois
+- Page dédiée : https://itinup.com/fr/services
+
+### Freelance TIBCO
+- Expert TIBCO BusinessWorks et TIBCO EMS pour grands comptes
+- Missions d'intégration, migration et support
+- Page dédiée : https://itinup.com/fr/tibco-freelance-france
+
+## Pages principales
+
+- https://itinup.com/fr (Accueil)
+- https://itinup.com/en (Homepage EN)
+- https://itinup.com/fr/lancer-mon-projet (Accompagnement projet tech & MVP)
+- https://itinup.com/fr/services (Tous les services)
+- https://itinup.com/fr/devops-france (Freelance DevOps France)
+- https://itinup.com/fr/java-spring-boot-freelance-france (Freelance Java Spring Boot)
+- https://itinup.com/fr/creation-site-france (Création site web France)
+- https://itinup.com/fr/application-web-france (Application web France)
+- https://itinup.com/fr/tibco-freelance-france (Freelance TIBCO France)
+- https://itinup.com/fr/blog (Blog DevOps & web)
+- https://itinup.com/fr/contact (Contact)
+
+## Pages GEO — Montpellier
+
+- https://itinup.com/fr/devops-montpellier (DevOps Montpellier)
+- https://itinup.com/fr/creation-site-montpellier (Création site Montpellier)
+- https://itinup.com/fr/java-spring-boot-freelance-montpellier (Java Spring Boot Montpellier)
+- https://itinup.com/fr/lancer-mon-projet-montpellier (Lancer mon projet Montpellier)
+
+## Pages GEO — Paris
+
+- https://itinup.com/fr/devops-paris (DevOps Paris — remote)
+- https://itinup.com/fr/creation-site-paris (Création site Paris — remote)
+- https://itinup.com/fr/java-spring-boot-freelance-paris (Java Spring Boot Paris — remote)
+- https://itinup.com/fr/lancer-mon-projet-paris (Lancer mon projet Paris — remote)
+
+## Pages GEO — Toulouse
+
+- https://itinup.com/fr/devops-toulouse (DevOps Toulouse — remote)
+- https://itinup.com/fr/creation-site-toulouse (Création site Toulouse — remote)
+- https://itinup.com/fr/java-spring-boot-freelance-toulouse (Java Spring Boot Toulouse — remote)
+- https://itinup.com/fr/lancer-mon-projet-toulouse (Lancer mon projet Toulouse — remote)
+
+## Articles de blog
+
+### 1. Combien coûte un freelance DevOps en France en 2025 ?
+Tarif journalier, forfaits mensuels, facteurs de prix — guide complet pour budgéter votre prestation
+DevOps en France en 2025. Taux réels, sans jargon. Fourchette : 400 à 700 €/jour pour un profil senior.
+URL : https://itinup.com/fr/blog/combien-coute-freelance-devops-france-2025
+
+### 2. CI/CD pour startup : par où commencer sans ingénieur DevOps ?
+Guide pratique pas-à-pas : pipeline CI/CD avec GitHub Actions et Docker sans ingénieur DevOps dédié.
+Exemples de code réels pour startups en France.
+URL : https://itinup.com/fr/blog/cicd-startup-sans-ingenieur-devops
+
+### 3. Pourquoi votre site WordPress ralentit vos ventes
+Temps de chargement, plugins accumulés, hébergement mutualisé — pourquoi WordPress ralentit et ce que
+ça coûte réellement à votre business en France.
+URL : https://itinup.com/fr/blog/pourquoi-site-wordpress-ralentit-ventes
+
+### 4. Freelance DevOps vs agence IT : ce que personne ne vous dit
+Comparatif honnête : coûts réels, délais, engagement, expertise. Pour PME et startups françaises qui
+externalisent leur DevOps ou infrastructure cloud.
+URL : https://itinup.com/fr/blog/freelance-devops-vs-agence-it
+
+### 5. Créer un site web pro en 2025 : ce qui est vraiment inclus dans le prix
+Ce qui compose le prix d'un site web en 2025 : design, dev, hébergement, SEO, maintenance.
+Fourchettes réalistes pour la France, sans détour.
+URL : https://itinup.com/fr/blog/creation-site-web-professionnel-2025-inclus
+
+### 6. Comment se faire accompagner sur son projet tech en 2025 ?
+Freelance, agence, CTO part-time : comment choisir le bon accompagnement pour votre projet tech en 2025.
+Guide pratique pour fondateurs non-techniciens.
+URL : https://itinup.com/fr/blog/accompagnement-projet-tech
+
+### 7. Comment créer un MVP pour sa startup sans exploser son budget ?
+Méthode, stack technique, délais, erreurs à éviter : guide complet pour construire votre MVP de startup
+en 2025 avec un budget maîtrisé.
+URL : https://itinup.com/fr/blog/creer-mvp-startup
+
+### 8. Combien coûte un MVP en 2025 ? Guide complet avec tarifs réels
+Prix réels d'un MVP en 2025 : SaaS, application mobile, marketplace. Fourchettes honnêtes, facteurs
+de coût, et erreurs coûteuses à éviter.
+URL : https://itinup.com/fr/blog/combien-coute-mvp
+
+### 9. Comment lancer un SaaS sans CTO en 2025 ?
+No-code, low-code ou développeur freelance : comment lancer votre SaaS sans CTO en 2025.
+Les vraies options, les pièges et les étapes concrètes.
+URL : https://itinup.com/fr/blog/lancer-saas-sans-cto
+
+## Sitemaps
+
+- https://itinup.com/sitemap.xml (index des sitemaps)
+- https://itinup.com/sitemap-main.xml (pages principales)
+- https://itinup.com/sitemap-services.xml (pages services & GEO)
+- https://itinup.com/sitemap-blog.xml (articles de blog)
+
+## Références clients
+
+Missions réalisées pour ou via : AMUE (Agence de Mutualisation des Universités), Airbus, Capgemini,
+Inetum, AIFE (Agence pour l'Informatique Financière de l'État).
+
+## Contact & profils
+
+- Site : https://itinup.com
+- Email : contact@itinup.com
+- WhatsApp : +33 7 64 27 84 51
+- LinkedIn : https://www.linkedin.com/in/zouhiridrissi
+- Malt : https://www.malt.fr/profile/zouhirecharifelidrissielkandri?overview
+- Freelance-informatique : https://www.freelance-informatique.fr/cv-ingenieur-de-developpement-logiciel-220219C001
+- Localisation : 1218 Avenue du Père Soulas, 34000 Montpellier, France
+
+## Informations légales
+
+- Forme juridique : Auto-entrepreneur / Micro-entreprise
+- SIRET : 999 008 329 00016
+- Activité principale : Développement de logiciels et conseil informatique
+- TVA non applicable, article 293B du CGI

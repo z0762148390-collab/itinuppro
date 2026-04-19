@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { Link } from '@/navigation';
 import { SITE } from '@/lib/constants';
 import dynamic from 'next/dynamic';
@@ -19,6 +19,9 @@ function WhatsAppIcon() {
 
 export default function Hero() {
   const t = useTranslations('hero');
+  const locale = useLocale();
+  const launchHref = locale === 'fr' ? '/lancer-mon-projet' : '/start-my-project';
+  const launchText = locale === 'ar' ? 'أطلق مشروعي' : locale === 'en' ? 'Launch my project' : 'Lancer mon projet';
 
   return (
     <section className="relative overflow-hidden bg-slate-950 pt-20 pb-24 px-4 sm:px-6 lg:px-8">
@@ -79,6 +82,12 @@ export default function Hero() {
 
             <p className="mt-9 text-xs text-slate-600 tracking-wide text-center lg:text-left rtl:text-right">
               Basé à Montpellier · France entière en remote · SIRET 999 008 329 00016
+            </p>
+            <p className="mt-4 text-center lg:text-left rtl:text-right">
+              <Link href={launchHref}
+                className="text-sm text-brand-400 hover:text-brand-300 transition-colors">
+                → {launchText}
+              </Link>
             </p>
           </div>
 

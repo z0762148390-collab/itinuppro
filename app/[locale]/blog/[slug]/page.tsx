@@ -222,9 +222,9 @@ export default async function BlogPostPage({ params }: Props) {
 
   const cta = {
     heading:
-      locale === 'ar' ? 'هل لديك هذه المشكلة؟ دعنا نتحدث.' :
-      locale === 'en' ? "Got this problem? Let's talk." :
-      'Vous avez ce problème ? Parlons-en.',
+      locale === 'ar' ? 'ما قرأته للتو، هو ما أفعله.' :
+      locale === 'en' ? 'I build what you just read about.' :
+      'Ce que vous lisez, je le fais.',
     sub:
       locale === 'ar' ? 'رد خلال 24 ساعة، بدون التزام.' :
       locale === 'en' ? 'Response within 24h, no commitment.' :
@@ -233,6 +233,10 @@ export default async function BlogPostPage({ params }: Props) {
       locale === 'ar' ? 'طلب عرض مجاني' :
       locale === 'en' ? 'Request a free quote' :
       'Demander un devis gratuit',
+    servicesBtn:
+      locale === 'ar' ? 'اكتشف خدماتي' :
+      locale === 'en' ? 'Discover my services' :
+      'Voir mes services',
     related:
       locale === 'ar' ? 'مقال ذو صلة' :
       locale === 'en' ? 'Related article' :
@@ -243,6 +247,34 @@ export default async function BlogPostPage({ params }: Props) {
     <>
       <JsonLd schema={blogPostingSchema} />
       <JsonLd schema={breadcrumbSchema} />
+
+      {/* Fixed sidebar CTA — visible only on wide screens where there's room beside the content */}
+      <aside
+        className={`hidden xl:flex flex-col gap-2 fixed top-24 z-40 w-52
+                    ${isRtl ? 'left-6' : 'right-6'}`}
+      >
+        <div className="card p-5">
+          <p className="font-bold text-white text-sm mb-1 leading-snug">{cta.heading}</p>
+          <p className="text-slate-500 text-xs mb-4">{cta.sub}</p>
+          <div className="flex flex-col gap-2">
+            <Link
+              href="/contact"
+              className="btn-gradient inline-flex items-center justify-center px-4 py-2.5
+                         text-white font-semibold rounded-lg text-xs"
+            >
+              {cta.btn}
+            </Link>
+            <Link
+              href="/services"
+              className="inline-flex items-center justify-center px-4 py-2.5 text-slate-300
+                         font-semibold rounded-lg text-xs border border-slate-700
+                         hover:border-slate-500 hover:text-white transition-all duration-200"
+            >
+              {cta.servicesBtn} →
+            </Link>
+          </div>
+        </div>
+      </aside>
 
       <div className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-950 min-h-screen">
         <div className="max-w-2xl mx-auto" dir={isRtl ? 'rtl' : undefined}>
@@ -325,17 +357,27 @@ export default async function BlogPostPage({ params }: Props) {
             {/* Internal links */}
             <BlogInternalLinks locale={locale} />
 
-            {/* CTA */}
-            <div className="mt-10 card p-8 text-center">
+            {/* CTA — mobile/tablet only (sidebar handles desktop) */}
+            <div className="mt-10 card p-8 text-center xl:hidden">
               <p className="font-bold text-white text-xl mb-2">{cta.heading}</p>
               <p className="text-slate-400 text-sm mb-6">{cta.sub}</p>
-              <Link
-                href="/contact"
-                className="btn-gradient inline-flex items-center px-8 py-3
-                           text-white font-semibold rounded-xl text-sm"
-              >
-                {cta.btn}
-              </Link>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+                <Link
+                  href="/contact"
+                  className="btn-gradient inline-flex items-center px-8 py-3
+                             text-white font-semibold rounded-xl text-sm"
+                >
+                  {cta.btn}
+                </Link>
+                <Link
+                  href="/services"
+                  className="inline-flex items-center px-8 py-3 text-slate-300 font-semibold
+                             rounded-xl text-sm border border-slate-700 hover:border-slate-500
+                             hover:text-white transition-all duration-200"
+                >
+                  {cta.servicesBtn} →
+                </Link>
+              </div>
             </div>
           </article>
         </div>

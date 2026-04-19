@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Link } from '@/navigation';
 import { SITE } from '@/lib/constants';
 import ServicesSwitcher from '@/components/services/ServicesSwitcher';
 import FAQLanding from '@/components/landing/FAQLanding';
@@ -7,7 +8,8 @@ import { getFAQSchema } from '@/lib/schemas';
 import type { FAQ } from '@/types';
 
 interface Props {
-  params: Promise<{ locale: string }>;
+  params:       Promise<{ locale: string }>;
+  searchParams?: Promise<{ tab?: string }>;
 }
 
 /* ─── Locale-aware content ────────────────────────────────────── */
@@ -271,11 +273,33 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 /* ─── Page ────────────────────────────────────────────────────── */
 
-export default async function ServicesPage({ params }: Props) {
+export default async function ServicesPage({ params, searchParams }: Props) {
   const { locale } = await params;
+  const sp = searchParams ? await searchParams : undefined;
+  const initialTab: 'mission' | 'creation' = sp?.tab === 'creation' ? 'creation' : 'mission';
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   const c = (CONTENT[locale] ?? CONTENT['fr'])!;
   const isRtl = locale === 'ar';
+
+  const launchPath = locale === 'fr' ? '/lancer-mon-projet' : '/start-my-project';
+  const LAUNCH_BAND = {
+    fr: {
+      title: 'Vous avez un projet à lancer ?',
+      sub:   "Startup, SaaS, application métier — je vous accompagne de l'idée au produit en production.",
+      btn:   'Lancer mon projet tech',
+    },
+    en: {
+      title: 'Ready to Launch Your Tech Project?',
+      sub:   'Startup, SaaS, business application — from idea to production.',
+      btn:   'Launch my tech project',
+    },
+    ar: {
+      title: 'هل لديك مشروع لإطلاقه؟',
+      sub:   'ناشئة، SaaS، تطبيق مخصص — من الفكرة إلى الإطلاق.',
+      btn:   'إطلاق مشروعي التقني',
+    },
+  } as const;
+  const lb = LAUNCH_BAND[locale as keyof typeof LAUNCH_BAND] ?? LAUNCH_BAND.fr;
 
   return (
     <>
@@ -313,8 +337,23 @@ export default async function ServicesPage({ params }: Props) {
 
       {/* ── Tab switcher ─────────────────────────────────────────── */}
       <div className="bg-slate-950 pt-10">
-        <ServicesSwitcher locale={locale} />
+        <ServicesSwitcher locale={locale} initialTab={initialTab} />
       </div>
+
+      {/* ── Lancement de projet — bandeau ────────────────────────── */}
+      <section className="bg-slate-900 border-y border-slate-800/60 py-10 px-4 sm:px-6 lg:px-8">
+        <div className={`max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 ${isRtl ? 'rtl sm:flex-row-reverse' : ''}`}>
+          <div className={isRtl ? 'text-right' : ''}>
+            <p className="text-white font-bold text-lg">{lb.title}</p>
+            <p className="text-slate-400 text-sm mt-1">{lb.sub}</p>
+          </div>
+          <Link
+            href={launchPath}
+            className="btn-gradient inline-flex items-center justify-center px-6 py-3 text-white font-semibold rounded-xl whitespace-nowrap shrink-0">
+            {lb.btn}
+          </Link>
+        </div>
+      </section>
 
       {/* ── Trust / mini-bio ─────────────────────────────────────── */}
       <section className="bg-slate-950 py-20 px-4 sm:px-6 lg:px-8">

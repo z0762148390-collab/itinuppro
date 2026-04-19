@@ -1,11 +1,11 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Briefcase, Monitor,
   Cloud, Code2, Layout, Search,
   Home, AppWindow, Key, RefreshCw,
-  ArrowRight,
+  ArrowRight, Rocket,
 } from 'lucide-react';
 import { Link } from '@/navigation';
 import { SITE } from '@/lib/constants';
@@ -33,6 +33,7 @@ type SwitcherContent = {
   javaTitle: string; javaDesc: string; javaRefs: string; javaTibco: string; javaCta: string;
   webTitle: string; webDesc: string; webCta: string;
   auditTitle: string; auditDesc: string; auditCta: string;
+  launchTitle: string; launchDesc: string; launchCta: string; launchHref: string;
   mReassurance: [string, string, string, string];
   mCtaH2: string; mCtaP: string; mCtaBtn: string;
   // Creation tab
@@ -74,6 +75,11 @@ const LANG: Record<string, SwitcherContent> = {
     auditTitle: 'Audit & Conseil Technique',
     auditDesc: 'Un regard expert sur votre code, votre infra ou votre architecture avant d\'aller plus loin.',
     auditCta: 'Demander un audit',
+
+    launchTitle: 'Lancement de projet & MVP',
+    launchDesc: 'Vous avez une idée ? Je vous accompagne de l\'idée au produit en production.',
+    launchCta: 'En savoir plus',
+    launchHref: '/lancer-mon-projet',
 
     mReassurance: [
       '🏢 AMUE · Capgemini · Airbus · Inetum · AIFE',
@@ -151,6 +157,11 @@ const LANG: Record<string, SwitcherContent> = {
     auditDesc: 'An expert review of your code, infrastructure, or architecture before going further.',
     auditCta: 'Request an audit',
 
+    launchTitle: 'Project launch & MVP',
+    launchDesc: 'Got an idea? I take you from idea to product in production.',
+    launchCta: 'Learn more',
+    launchHref: '/start-my-project',
+
     mReassurance: [
       '🏢 AMUE · Capgemini · Airbus · Inetum · AIFE',
       '⚡ Start within 2 weeks',
@@ -226,6 +237,11 @@ const LANG: Record<string, SwitcherContent> = {
     auditTitle: 'تدقيق واستشارة تقنية',
     auditDesc: 'نظرة خبيرة على كودك أو بنيتك التحتية أو معمارية النظام قبل المضي قدماً.',
     auditCta: 'طلب تدقيق',
+
+    launchTitle: 'إطلاق المشروع و MVP',
+    launchDesc: 'لديك فكرة؟ أرافقك من الفكرة إلى المنتج في الإنتاج.',
+    launchCta: 'اعرف أكثر',
+    launchHref: '/start-my-project',
 
     mReassurance: [
       '🏢 AMUE · Capgemini · Airbus · Inetum · AIFE',
@@ -407,6 +423,18 @@ function TabMission({ l }: { l: SwitcherContent }) {
           ctaHref="/contact?service=audit"
           waService="audit"
         />
+
+        <div className="sm:col-span-2">
+          <ServiceCard
+            icon={<Rocket size={20} />}
+            title={l.launchTitle}
+            description={l.launchDesc}
+            tags={['MVP', 'SaaS', 'Startup', 'Next.js', 'FastAPI']}
+            cta={l.launchCta}
+            ctaHref={l.launchHref}
+            waService="launch"
+          />
+        </div>
       </div>
 
       <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3
@@ -575,8 +603,12 @@ function TabCreation({ l }: { l: SwitcherContent }) {
 /* ─── Main switcher ───────────────────────────────────────────── */
 type Tab = 'mission' | 'creation';
 
-export default function ServicesSwitcher({ locale = 'fr' }: { locale?: string }) {
-  const [tab, setTab] = useState<Tab>('mission');
+export default function ServicesSwitcher({ locale = 'fr', initialTab = 'mission' }: { locale?: string; initialTab?: Tab }) {
+  const [tab, setTab] = useState<Tab>(initialTab);
+
+  useEffect(() => {
+    setTab(initialTab);
+  }, [initialTab]);
   const l = LANG[locale] ?? LANG['fr']!;
 
   return (

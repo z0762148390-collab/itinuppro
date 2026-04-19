@@ -1,17 +1,13 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
-import { Link } from '@/navigation';
 import { SITE } from '@/lib/constants';
 import JsonLd from '@/components/ui/JsonLd';
-import Pagination from '@/components/ui/Pagination';
+import BlogList from '@/components/blog/BlogList';
 import { getAllSlugs, getPost } from '@/lib/blog-posts';
 import { getBlogSchema } from '@/lib/schemas';
 
-const PER_PAGE = 6;
-
 interface Props {
   params: Promise<{ locale: string }>;
-  searchParams?: Promise<{ page?: string }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -33,13 +29,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function BlogPage({ params, searchParams }: Props) {
+export default async function BlogPage({ params }: Props) {
   const { locale } = await params;
-  const sp = await searchParams;
   const t = await getTranslations({ locale, namespace: 'blog_page_content' });
 
-  const allSlugs = getAllSlugs();
-  const articles = allSlugs
+  const articles = getAllSlugs()
     .map((slug) => {
       const post = getPost(slug, locale);
       return post ? { slug, ...post } : null;
@@ -55,21 +49,9 @@ export default async function BlogPage({ params, searchParams }: Props) {
       category: string;
     }>;
 
-  const totalPages = Math.ceil(articles.length / PER_PAGE);
-  const currentPage = Math.min(Math.max(Number(sp?.page ?? 1), 1), totalPages || 1);
-  const paged = articles.slice((currentPage - 1) * PER_PAGE, currentPage * PER_PAGE);
-
-  const fmt = (d: string) =>
-    new Date(d).toLocaleDateString(
-      locale === 'ar' ? 'ar-MA' : locale === 'en' ? 'en-GB' : 'fr-FR',
-      { year: 'numeric', month: 'long', day: 'numeric' }
-    );
-
-  const blogSchema = getBlogSchema();
-
   return (
     <>
-      <JsonLd schema={blogSchema} />
+      <JsonLd schema={getBlogSchema()} />
       <div className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-950 min-h-screen">
         <div className="max-w-3xl mx-auto">
 
@@ -80,39 +62,8 @@ export default async function BlogPage({ params, searchParams }: Props) {
             <p className="text-xl text-slate-400">{t('subtitle')}</p>
           </div>
 
-          <ol className="space-y-4" aria-label={locale === 'ar' ? 'مقالات المدونة' : locale === 'en' ? 'Blog articles' : 'Articles de blog'}>
-            {paged.map(({ slug, title, description, date, readingTime, tags }) => (
-              <li key={slug}>
-                <Link
-                  href={`/blog/${slug}` as any}
-                  className="group card p-6 flex flex-col gap-3 block"
-                >
-                  <div className="flex items-center gap-3 text-xs text-slate-600">
-                    <time dateTime={date}>{fmt(date)}</time>
-                    <span aria-hidden="true">·</span>
-                    <span>{readingTime} min</span>
-                    {tags[0] && (
-                      <>
-                        <span aria-hidden="true">·</span>
-                        <span className="text-brand-600">{tags[0]}</span>
-                      </>
-                    )}
-                  </div>
-                  <h2 className="font-bold text-white text-lg leading-snug
-                                 group-hover:text-brand-400 transition-colors">
-                    {title}
-                  </h2>
-                  <p className="text-slate-400 text-sm leading-relaxed">{description}</p>
-                </Link>
-              </li>
-            ))}
-          </ol>
+          <BlogList articles={articles} locale={locale} />
 
-          <Pagination
-            currentPage={currentPage}
-            totalPages={totalPages}
-            basePath="/blog"
-          />
         </div>
       </div>
     </>

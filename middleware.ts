@@ -81,8 +81,8 @@ export default function middleware(request: NextRequest): NextResponse {
 }
 
 export const config = {
-  // Skip Next.js internals, API routes, static files and well-known files
+  // Skip Next.js internals, API routes, static files, image routes and well-known files
   matcher: [
-    '/((?!_next|api|stats|favicon\\.ico|robots\\.txt|sitemap\\.xml|manifest\\.json|.*\\..*).*)',
+    '/((?!_next|api|stats|icon|apple-icon|opengraph-image|favicon\\.ico|robots\\.txt|sitemap\\.xml|manifest\\.json|.*\\..*).*)',
   ],
 };

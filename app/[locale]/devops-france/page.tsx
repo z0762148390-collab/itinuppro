@@ -40,6 +40,35 @@ export default async function DevOpsFrancePage({ params }: Props) {
   const processItems = t.raw('section_process_items') as string[];
   const faqItems    = t.raw('faq')                   as FAQ[];
 
+  const launchPath = locale === 'fr' ? '/lancer-mon-projet' : '/start-my-project';
+  const LAUNCH_SECTION = {
+    fr: {
+      title:   'Vous avez aussi un projet à lancer ?',
+      text:    "Au-delà des missions DevOps, j'accompagne des startups et entrepreneurs dans le lancement de leur produit tech.",
+      btn:     "Voir l'offre lancement projet",
+      faqQ:    'Accompagnez-vous aussi des startups ?',
+      faqA:    "Oui. En plus des missions DevOps classiques, j'accompagne des entrepreneurs et startups dans le lancement de leur MVP. ",
+      faqLink: "Voir l'offre",
+    },
+    en: {
+      title:   'Got a Product to Launch?',
+      text:    'Beyond DevOps missions, I support startups and entrepreneurs in launching their tech product.',
+      btn:     'See the project launch offer',
+      faqQ:    'Do you also support startups?',
+      faqA:    'Yes. Beyond standard DevOps missions, I support entrepreneurs and startups in launching their MVP. ',
+      faqLink: 'See the offer',
+    },
+    ar: {
+      title:   'هل لديك منتج لإطلاقه أيضاً؟',
+      text:    'إلى جانب مهام DevOps، أرافق الشركات الناشئة ورواد الأعمال في إطلاق منتجاتهم التقنية.',
+      btn:     'اكتشف عرض إطلاق المشروع',
+      faqQ:    'هل تدعم الشركات الناشئة أيضاً؟',
+      faqA:    'نعم. إلى جانب مهام DevOps الكلاسيكية، أرافق رواد الأعمال والشركات الناشئة في إطلاق MVP الخاص بهم. ',
+      faqLink: 'اطلع على العرض',
+    },
+  } as const;
+  const ls = LAUNCH_SECTION[locale as keyof typeof LAUNCH_SECTION] ?? LAUNCH_SECTION.fr;
+
   return (
     <>
       <JsonLd schema={[getLocalBusinessSchema(), getFAQSchema(faqItems)]} />
@@ -116,6 +145,15 @@ export default async function DevOpsFrancePage({ params }: Props) {
                   <dd className="text-slate-400 leading-relaxed">{faq.answer}</dd>
                 </div>
               ))}
+              <div className="card p-5 rtl:text-right">
+                <dt className="font-bold text-white mb-2">{ls.faqQ}</dt>
+                <dd className="text-slate-400 leading-relaxed">
+                  {ls.faqA}
+                  <Link href={launchPath} className="text-brand-400 hover:text-brand-300 transition-colors underline">
+                    {ls.faqLink}
+                  </Link>
+                </dd>
+              </div>
             </dl>
           </section>
 
@@ -139,6 +177,17 @@ export default async function DevOpsFrancePage({ params }: Props) {
                 WhatsApp
               </a>
             </div>
+          </div>
+
+          {/* Lancement de projet — CTA additionnel */}
+          <div className="card p-8 text-center rtl:text-right mt-6">
+            <p className="font-bold text-white text-xl mb-2">{ls.title}</p>
+            <p className="text-slate-400 mb-6">{ls.text}</p>
+            <Link
+              href={launchPath}
+              className="btn-gradient inline-flex items-center justify-center px-8 py-3 text-white font-semibold rounded-xl">
+              {ls.btn}
+            </Link>
           </div>
 
         </div>

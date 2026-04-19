@@ -62,6 +62,8 @@ export default async function LocaleLayout({ children, params }: Props) {
       <head>
         {/* Global structured data on every page */}
         <JsonLd schema={[getPersonSchema(), getOrganizationSchema()]} />
+        {/* llms.txt — AI discovery */}
+        <link rel="alternate" type="text/plain" title="LLMs.txt" href={`${SITE.url}/llms.txt`} />
       </head>
       <body className="min-h-screen bg-slate-950 text-slate-100 antialiased">
         <NextIntlClientProvider messages={messages} locale={locale}>

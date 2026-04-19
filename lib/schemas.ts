@@ -19,10 +19,7 @@ export function getPersonSchema(): JsonLdSchema {
       addressCountry: SITE.country,
     },
     knowsAbout: [...PERSON.knowsAbout],
-    sameAs: [
-      SITE.url,
-      // LinkedIn and GitHub will be added here once URLs are confirmed
-    ],
+    sameAs: [SITE.url, SITE.linkedin, SITE.malt, SITE.freelanceInfo],
   };
 }
 
@@ -56,7 +53,7 @@ export function getOrganizationSchema(): JsonLdSchema {
       'AWS', 'Docker', 'Terraform', 'Next.js', 'TIBCO',
       'Microservices', 'FastAPI', 'PostgreSQL',
     ],
-    sameAs: [SITE.url],
+    sameAs: [SITE.url, SITE.linkedin, SITE.malt, SITE.freelanceInfo],
   };
 }
 

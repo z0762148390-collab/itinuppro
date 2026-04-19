@@ -65,6 +65,29 @@ export default async function JavaSpringBootPage({ params }: Props) {
   const usecases     = t.raw('section_usecases_items') as UseCase[];
   const faqItems     = t.raw('faq')                    as FAQ[];
 
+  const launchPath = locale === 'fr' ? '/lancer-mon-projet' : '/start-my-project';
+  const JAVA_LAUNCH = {
+    fr: {
+      title:     "Besoin d'un développeur Java pour votre projet ?",
+      text:      "Si vous avez un projet à lancer (MVP, SaaS, application métier), je peux vous accompagner de A à Z, pas seulement en mission.",
+      btn:       'Lancer mon projet avec Java Spring Boot',
+      linkLabel: 'Lancer votre projet tech',
+    },
+    en: {
+      title:     'Need a Java Developer for Your Project?',
+      text:      'If you have a project to launch (MVP, SaaS, business application), I can guide you end-to-end — not just as a contractor.',
+      btn:       'Launch my project with Java Spring Boot',
+      linkLabel: 'Launch your tech project',
+    },
+    ar: {
+      title:     'هل تحتاج مطور Java لمشروعك؟',
+      text:      'إذا كان لديك مشروع لإطلاقه (MVP، SaaS، تطبيق مخصص)، يمكنني مرافقتك من الألف إلى الياء.',
+      btn:       'إطلاق مشروعي مع Java Spring Boot',
+      linkLabel: 'إطلاق مشروعك التقني',
+    },
+  } as const;
+  const jl = JAVA_LAUNCH[locale as keyof typeof JAVA_LAUNCH] ?? JAVA_LAUNCH.fr;
+
   const serviceSchema = getServiceSchema({
     name: tMeta('title'),
     description: tMeta('description'),
@@ -235,7 +258,21 @@ export default async function JavaSpringBootPage({ params }: Props) {
                 className="text-sm text-brand-400 hover:text-brand-300 transition-colors">
                 → {t('link_blog')}
               </a>
+              <Link href={launchPath}
+                className="text-sm text-brand-400 hover:text-brand-300 transition-colors">
+                → {jl.linkLabel}
+              </Link>
             </div>
+          </div>
+
+          {/* ── Lancement de projet Java ─────────────────────────── */}
+          <div className="bg-slate-900 border border-brand-500/20 rounded-2xl p-8 text-center mb-12 rtl:text-right">
+            <p className="text-white font-semibold text-xl mb-2">{jl.title}</p>
+            <p className="text-slate-400 text-sm mb-6">{jl.text}</p>
+            <Link href={launchPath}
+              className="btn-gradient px-8 py-3.5 text-white font-semibold rounded-xl inline-flex items-center justify-center">
+              {jl.btn}
+            </Link>
           </div>
 
           {/* ── Final CTA ────────────────────────────────────────── */}

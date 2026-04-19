@@ -9,6 +9,9 @@ export const SITE = {
   country: 'FR',
   siret: '999 008 329 00016',
   googleMaps: 'https://maps.google.com/?q=1218+Avenue+du+Pere+Soulas+34000+Montpellier',
+  linkedin:         'https://www.linkedin.com/in/zouhiridrissi',
+  malt:             'https://www.malt.fr/profile/zouhirecharifelidrissielkandri?overview',
+  freelanceInfo:    'https://www.freelance-informatique.fr/cv-ingenieur-de-developpement-logiciel-220219C001',
   locales: ['fr', 'en', 'ar'] as const,
   defaultLocale: 'fr' as const,
 } as const;
