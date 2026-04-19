@@ -1,8 +1,6 @@
 import { SITE } from '@/lib/constants';
 import { BLOG_POSTS } from '@/lib/blog-posts';
 
-export const dynamic = 'force-static';
-
 const BASE = SITE.url;
 
 type Locale = 'fr' | 'en' | 'ar';

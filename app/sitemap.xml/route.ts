@@ -1,7 +1,5 @@
 import { SITE } from '@/lib/constants';
 
-export const dynamic = 'force-static';
-
 export function GET() {
   const base  = SITE.url;
   const today = new Date().toISOString().slice(0, 10);

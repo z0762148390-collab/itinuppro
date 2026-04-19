@@ -1,7 +1,5 @@
 import { SITE } from '@/lib/constants';
 
-export const dynamic = 'force-static';
-
 const BASE = SITE.url;
 
 // Multi-locale URL block (fr + en + ar, 3 <url> entries)
